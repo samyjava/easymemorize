@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		604C3ADB8B5CD40B78945FE0 /* Pods_EasyMemorize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79A6D95BF7D7DE9642A8F17 /* Pods_EasyMemorize.framework */; };
+		F21F248F238BD0D300CFCFBF /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21F248E238BD0D300CFCFBF /* LogIn.storyboard */; };
 		F296AC61238BB55000E8E5ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC60238BB55000E8E5ED /* AppDelegate.swift */; };
 		F296AC63238BB55000E8E5ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC62238BB55000E8E5ED /* SceneDelegate.swift */; };
 		F296AC65238BB55000E8E5ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC64238BB55000E8E5ED /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		2D10717DB534B659A2B49635 /* Pods-EasyMemorize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMemorize.release.xcconfig"; path = "Target Support Files/Pods-EasyMemorize/Pods-EasyMemorize.release.xcconfig"; sourceTree = "<group>"; };
 		C79A6D95BF7D7DE9642A8F17 /* Pods_EasyMemorize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyMemorize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5EF1047C4E86A85728823E0 /* Pods-EasyMemorize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMemorize.debug.xcconfig"; path = "Target Support Files/Pods-EasyMemorize/Pods-EasyMemorize.debug.xcconfig"; sourceTree = "<group>"; };
+		F21F248E238BD0D300CFCFBF /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		F296AC5D238BB55000E8E5ED /* EasyMemorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMemorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F296AC60238BB55000E8E5ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F296AC62238BB55000E8E5ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		F21F2487238BCEBA00CFCFBF /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				F21F248E238BD0D300CFCFBF /* LogIn.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21F248F238BD0D300CFCFBF /* LogIn.storyboard in Resources */,
 				F296AC6D238BB55600E8E5ED /* LaunchScreen.storyboard in Resources */,
 				F296AC6A238BB55600E8E5ED /* Assets.xcassets in Resources */,
 				F296AC68238BB55000E8E5ED /* Main.storyboard in Resources */,
