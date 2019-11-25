@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -87,8 +87,82 @@
 				E5EF1047C4E86A85728823E0 /* Pods-EasyMemorize.debug.xcconfig */,
 				2D10717DB534B659A2B49635 /* Pods-EasyMemorize.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F21F2484238BCE6300CFCFBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F21F2485238BCE8B00CFCFBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F21F2487238BCEBA00CFCFBF /* Storyboard */,
+				F21F2486238BCEA300CFCFBF /* ViewControler */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F21F2486238BCEA300CFCFBF /* ViewControler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControler;
+			sourceTree = "<group>";
+		};
+		F21F2487238BCEBA00CFCFBF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F21F2488238BCECF00CFCFBF /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				F21F248B238BCF2100CFCFBF /* ViewModel */,
+				F21F248A238BCEEF00CFCFBF /* SceneCoordinator */,
+				F21F2489238BCEDC00CFCFBF /* Service */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		F21F2489238BCEDC00CFCFBF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F21F248A238BCEEF00CFCFBF /* SceneCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SceneCoordinator;
+			sourceTree = "<group>";
+		};
+		F21F248B238BCF2100CFCFBF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F21F248C238BCF4D00CFCFBF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F21F248D238BCF7600CFCFBF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		F296AC54238BB55000E8E5ED = {
@@ -116,6 +190,11 @@
 		F296AC5F238BB55000E8E5ED /* EasyMemorize */ = {
 			isa = PBXGroup;
 			children = (
+				F21F2484238BCE6300CFCFBF /* Model */,
+				F21F2485238BCE8B00CFCFBF /* View */,
+				F21F2488238BCECF00CFCFBF /* Business */,
+				F21F248C238BCF4D00CFCFBF /* Resource */,
+				F21F248D238BCF7600CFCFBF /* Extension */,
 				F296AC60238BB55000E8E5ED /* AppDelegate.swift */,
 				F296AC62238BB55000E8E5ED /* SceneDelegate.swift */,
 				F296AC64238BB55000E8E5ED /* ViewController.swift */,
