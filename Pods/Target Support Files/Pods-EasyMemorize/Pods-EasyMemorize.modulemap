@@ -1,0 +1,6 @@
+framework module Pods_EasyMemorize {
+  umbrella header "Pods-EasyMemorize-umbrella.h"
+
+  export *
+  module * { export * }
+}
