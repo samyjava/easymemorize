@@ -10,6 +10,7 @@
 		604C3ADB8B5CD40B78945FE0 /* Pods_EasyMemorize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79A6D95BF7D7DE9642A8F17 /* Pods_EasyMemorize.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F21F248F238BD0D300CFCFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21F248E238BD0D300CFCFBF /* Main.storyboard */; };
 		F21F2491238C1EEF00CFCFBF /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21F2490238C1EEF00CFCFBF /* Dashboard.storyboard */; };
+		F22AC5ED238D08CA00DECCB1 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */; };
 		F296AC61238BB55000E8E5ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC60238BB55000E8E5ED /* AppDelegate.swift */; };
 		F296AC63238BB55000E8E5ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC62238BB55000E8E5ED /* SceneDelegate.swift */; };
 		F296AC65238BB55000E8E5ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC64238BB55000E8E5ED /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 		F296AC6D238BB55600E8E5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F296AC6B238BB55600E8E5ED /* LaunchScreen.storyboard */; };
 		F296AC78238BB55700E8E5ED /* EasyMemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC77238BB55700E8E5ED /* EasyMemorizeTests.swift */; };
 		F296AC83238BB55700E8E5ED /* EasyMemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC82238BB55700E8E5ED /* EasyMemorizeUITests.swift */; };
+		F2A53AF2239B954F00F6E039 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A53AF1239B954F00F6E039 /* Card.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 		E5EF1047C4E86A85728823E0 /* Pods-EasyMemorize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMemorize.debug.xcconfig"; path = "Target Support Files/Pods-EasyMemorize/Pods-EasyMemorize.debug.xcconfig"; sourceTree = "<group>"; };
 		F21F248E238BD0D300CFCFBF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F21F2490238C1EEF00CFCFBF /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
 		F296AC5D238BB55000E8E5ED /* EasyMemorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMemorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F296AC60238BB55000E8E5ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F296AC62238BB55000E8E5ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		F296AC7E238BB55700E8E5ED /* EasyMemorizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyMemorizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F296AC82238BB55700E8E5ED /* EasyMemorizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMemorizeUITests.swift; sourceTree = "<group>"; };
 		F296AC84238BB55700E8E5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2A53AF1239B954F00F6E039 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 			children = (
 				F21F248E238BD0D300CFCFBF /* Main.storyboard */,
 				F21F2490238C1EEF00CFCFBF /* Dashboard.storyboard */,
+				F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */,
+				F2A53AF1239B954F00F6E039 /* Card.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -343,8 +349,10 @@
 			files = (
 				F21F248F238BD0D300CFCFBF /* Main.storyboard in Resources */,
 				F296AC6D238BB55600E8E5ED /* LaunchScreen.storyboard in Resources */,
+				F2A53AF2239B954F00F6E039 /* Card.storyboard in Resources */,
 				F296AC6A238BB55600E8E5ED /* Assets.xcassets in Resources */,
 				F21F2491238C1EEF00CFCFBF /* Dashboard.storyboard in Resources */,
+				F22AC5ED238D08CA00DECCB1 /* Lesson.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
