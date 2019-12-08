@@ -54,7 +54,7 @@
                                                 <rect key="frame" x="138" y="190.5" width="153" height="39"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dontKnow" translatesAutoresizingMaskIntoConstraints="NO" id="hIP-r1-Nrf">
-                                                        <rect key="frame" x="0.0" y="4.5" width="30" height="30.000000000000014"/>
+                                                        <rect key="frame" x="0.0" y="4.5" width="30" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="hIP-r1-Nrf" secondAttribute="height" multiplier="1:1" id="16B-hq-hYh"/>
                                                             <constraint firstAttribute="width" constant="30" id="1EY-ky-wQc"/>
