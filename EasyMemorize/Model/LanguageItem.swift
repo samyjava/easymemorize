@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Language: String {
+enum LanguageItem: String {
     case us = "en-us"
     case gb = "en-gb"
     case de = "de-de"

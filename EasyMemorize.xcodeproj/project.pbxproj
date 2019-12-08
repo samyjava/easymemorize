@@ -12,7 +12,10 @@
 		F21F2491238C1EEF00CFCFBF /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21F2490238C1EEF00CFCFBF /* Dashboard.storyboard */; };
 		F22AC5ED238D08CA00DECCB1 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */; };
 		F2636D57239BC2D400AC0339 /* Box.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2636D56239BC2D400AC0339 /* Box.storyboard */; };
-		F2964B87239D296600F4D223 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B86239D296600F4D223 /* Language.swift */; };
+		F2964B87239D296600F4D223 /* LanguageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B86239D296600F4D223 /* LanguageItem.swift */; };
+		F2964B8B239D2B6900F4D223 /* LessonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B8A239D2B6900F4D223 /* LessonItem.swift */; };
+		F2964B8D239D347200F4D223 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B8C239D347200F4D223 /* CardItem.swift */; };
+		F2964B8F239D37F600F4D223 /* BoxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B8E239D37F600F4D223 /* BoxItem.swift */; };
 		F296AC61238BB55000E8E5ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC60238BB55000E8E5ED /* AppDelegate.swift */; };
 		F296AC63238BB55000E8E5ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC62238BB55000E8E5ED /* SceneDelegate.swift */; };
 		F296AC65238BB55000E8E5ED /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC64238BB55000E8E5ED /* RegisterViewController.swift */; };
@@ -21,6 +24,7 @@
 		F296AC78238BB55700E8E5ED /* EasyMemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC77238BB55700E8E5ED /* EasyMemorizeTests.swift */; };
 		F296AC83238BB55700E8E5ED /* EasyMemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC82238BB55700E8E5ED /* EasyMemorizeUITests.swift */; };
 		F2A53AF2239B954F00F6E039 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A53AF1239B954F00F6E039 /* Card.storyboard */; };
+		F2FC81BE239D5C6B0054F7E1 /* BoxCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FC81BD239D5C6B0054F7E1 /* BoxCardItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +52,10 @@
 		F21F2490238C1EEF00CFCFBF /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
 		F2636D56239BC2D400AC0339 /* Box.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Box.storyboard; sourceTree = "<group>"; };
-		F2964B86239D296600F4D223 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		F2964B86239D296600F4D223 /* LanguageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageItem.swift; sourceTree = "<group>"; };
+		F2964B8A239D2B6900F4D223 /* LessonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonItem.swift; sourceTree = "<group>"; };
+		F2964B8C239D347200F4D223 /* CardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
+		F2964B8E239D37F600F4D223 /* BoxItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxItem.swift; sourceTree = "<group>"; };
 		F296AC5D238BB55000E8E5ED /* EasyMemorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMemorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F296AC60238BB55000E8E5ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F296AC62238BB55000E8E5ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +70,7 @@
 		F296AC82238BB55700E8E5ED /* EasyMemorizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyMemorizeUITests.swift; sourceTree = "<group>"; };
 		F296AC84238BB55700E8E5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2A53AF1239B954F00F6E039 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
+		F2FC81BD239D5C6B0054F7E1 /* BoxCardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCardItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +111,11 @@
 		F21F2484238BCE6300CFCFBF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F2964B86239D296600F4D223 /* Language.swift */,
+				F2964B86239D296600F4D223 /* LanguageItem.swift */,
+				F2964B8A239D2B6900F4D223 /* LessonItem.swift */,
+				F2964B8C239D347200F4D223 /* CardItem.swift */,
+				F2964B8E239D37F600F4D223 /* BoxItem.swift */,
+				F2FC81BD239D5C6B0054F7E1 /* BoxCardItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -426,10 +438,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2964B8B239D2B6900F4D223 /* LessonItem.swift in Sources */,
 				F296AC65238BB55000E8E5ED /* RegisterViewController.swift in Sources */,
-				F2964B87239D296600F4D223 /* Language.swift in Sources */,
+				F2964B8D239D347200F4D223 /* CardItem.swift in Sources */,
+				F2964B87239D296600F4D223 /* LanguageItem.swift in Sources */,
 				F296AC61238BB55000E8E5ED /* AppDelegate.swift in Sources */,
 				F296AC63238BB55000E8E5ED /* SceneDelegate.swift in Sources */,
+				F2FC81BE239D5C6B0054F7E1 /* BoxCardItem.swift in Sources */,
+				F2964B8F239D37F600F4D223 /* BoxItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
