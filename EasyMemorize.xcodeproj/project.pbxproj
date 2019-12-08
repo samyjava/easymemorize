@@ -12,9 +12,10 @@
 		F21F2491238C1EEF00CFCFBF /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21F2490238C1EEF00CFCFBF /* Dashboard.storyboard */; };
 		F22AC5ED238D08CA00DECCB1 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */; };
 		F2636D57239BC2D400AC0339 /* Box.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2636D56239BC2D400AC0339 /* Box.storyboard */; };
+		F2964B87239D296600F4D223 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B86239D296600F4D223 /* Language.swift */; };
 		F296AC61238BB55000E8E5ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC60238BB55000E8E5ED /* AppDelegate.swift */; };
 		F296AC63238BB55000E8E5ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC62238BB55000E8E5ED /* SceneDelegate.swift */; };
-		F296AC65238BB55000E8E5ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC64238BB55000E8E5ED /* ViewController.swift */; };
+		F296AC65238BB55000E8E5ED /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC64238BB55000E8E5ED /* RegisterViewController.swift */; };
 		F296AC6A238BB55600E8E5ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F296AC69238BB55600E8E5ED /* Assets.xcassets */; };
 		F296AC6D238BB55600E8E5ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F296AC6B238BB55600E8E5ED /* LaunchScreen.storyboard */; };
 		F296AC78238BB55700E8E5ED /* EasyMemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC77238BB55700E8E5ED /* EasyMemorizeTests.swift */; };
@@ -47,10 +48,11 @@
 		F21F2490238C1EEF00CFCFBF /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
 		F2636D56239BC2D400AC0339 /* Box.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Box.storyboard; sourceTree = "<group>"; };
+		F2964B86239D296600F4D223 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		F296AC5D238BB55000E8E5ED /* EasyMemorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyMemorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F296AC60238BB55000E8E5ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F296AC62238BB55000E8E5ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F296AC64238BB55000E8E5ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F296AC64238BB55000E8E5ED /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F296AC69238BB55600E8E5ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F296AC6C238BB55600E8E5ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F296AC6E238BB55600E8E5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		F21F2484238BCE6300CFCFBF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F2964B86239D296600F4D223 /* Language.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +120,7 @@
 		F21F2486238BCEA300CFCFBF /* ViewControler */ = {
 			isa = PBXGroup;
 			children = (
+				F296AC64238BB55000E8E5ED /* RegisterViewController.swift */,
 			);
 			path = ViewControler;
 			sourceTree = "<group>";
@@ -210,7 +214,6 @@
 				F21F248D238BCF7600CFCFBF /* Extension */,
 				F296AC60238BB55000E8E5ED /* AppDelegate.swift */,
 				F296AC62238BB55000E8E5ED /* SceneDelegate.swift */,
-				F296AC64238BB55000E8E5ED /* ViewController.swift */,
 				F296AC69238BB55600E8E5ED /* Assets.xcassets */,
 				F296AC6B238BB55600E8E5ED /* LaunchScreen.storyboard */,
 				F296AC6E238BB55600E8E5ED /* Info.plist */,
@@ -423,7 +426,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F296AC65238BB55000E8E5ED /* ViewController.swift in Sources */,
+				F296AC65238BB55000E8E5ED /* RegisterViewController.swift in Sources */,
+				F2964B87239D296600F4D223 /* Language.swift in Sources */,
 				F296AC61238BB55000E8E5ED /* AppDelegate.swift in Sources */,
 				F296AC63238BB55000E8E5ED /* SceneDelegate.swift in Sources */,
 			);
@@ -594,7 +598,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9VZPP2C5Z;
 				INFOPLIST_FILE = EasyMemorize/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -614,7 +618,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N9VZPP2C5Z;
 				INFOPLIST_FILE = EasyMemorize/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
