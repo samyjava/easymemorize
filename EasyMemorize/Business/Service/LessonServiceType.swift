@@ -14,7 +14,7 @@ enum LessonServiceError: Error {
     case creationFailed
     case editationFailed
     case deletionFailed(LessonItem)
-    case fetchFailed(LessonItem)
+    case fetchFailed
     case assignationFailed(LessonItem)
 }
 
@@ -29,7 +29,7 @@ protocol LessonServiceType {
     func deleteLesson(lesson: LessonItem) -> Completable
     
     @discardableResult
-    func fetchAllLesson() -> Observable<[LessonItem]>
+    func fetchAllLesson() -> Observable<Results<LessonItem>>
     
     @discardableResult
     func assign(card: CardItem, to lesson: LessonItem) -> Completable

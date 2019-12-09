@@ -25,6 +25,7 @@
 		F296AC83238BB55700E8E5ED /* EasyMemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC82238BB55700E8E5ED /* EasyMemorizeUITests.swift */; };
 		F2A53AF2239B954F00F6E039 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A53AF1239B954F00F6E039 /* Card.storyboard */; };
 		F2D0BD6A239E2763002B9DC3 /* LessonServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0BD69239E2763002B9DC3 /* LessonServiceType.swift */; };
+		F2D0BD6C239E389E002B9DC3 /* LessonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0BD6B239E389E002B9DC3 /* LessonService.swift */; };
 		F2FC81BE239D5C6B0054F7E1 /* BoxCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FC81BD239D5C6B0054F7E1 /* BoxCardItem.swift */; };
 		F2FC81C0239D69290054F7E1 /* UserItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FC81BF239D69290054F7E1 /* UserItem.swift */; };
 		F2FC81C2239D69FA0054F7E1 /* LogInWayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FC81C1239D69FA0054F7E1 /* LogInWayItem.swift */; };
@@ -74,6 +75,7 @@
 		F296AC84238BB55700E8E5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2A53AF1239B954F00F6E039 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
 		F2D0BD69239E2763002B9DC3 /* LessonServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonServiceType.swift; sourceTree = "<group>"; };
+		F2D0BD6B239E389E002B9DC3 /* LessonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonService.swift; sourceTree = "<group>"; };
 		F2FC81BD239D5C6B0054F7E1 /* BoxCardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCardItem.swift; sourceTree = "<group>"; };
 		F2FC81BF239D69290054F7E1 /* UserItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItem.swift; sourceTree = "<group>"; };
 		F2FC81C1239D69FA0054F7E1 /* LogInWayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInWayItem.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				F2D0BD69239E2763002B9DC3 /* LessonServiceType.swift */,
+				F2D0BD6B239E389E002B9DC3 /* LessonService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				F2964B8B239D2B6900F4D223 /* LessonItem.swift in Sources */,
 				F296AC65238BB55000E8E5ED /* RegisterViewController.swift in Sources */,
 				F2D0BD6A239E2763002B9DC3 /* LessonServiceType.swift in Sources */,
+				F2D0BD6C239E389E002B9DC3 /* LessonService.swift in Sources */,
 				F2FC81C0239D69290054F7E1 /* UserItem.swift in Sources */,
 				F2964B8D239D347200F4D223 /* CardItem.swift in Sources */,
 				F2964B87239D296600F4D223 /* LanguageItem.swift in Sources */,
