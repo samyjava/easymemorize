@@ -11,9 +11,9 @@ import Foundation
 class UserItem {
     var prsImage: String?
     var userName: String!
-    var logInWay: String!
+    var logInWay: LogInWayItem!
     
-    convenience init(userName: String, logInWay: String, prsImage: String? = nil) {
+    convenience init(userName: String, logInWay: LogInWayItem, prsImage: String? = nil) {
         self.init()
         self.userName = userName
         self.logInWay = logInWay
