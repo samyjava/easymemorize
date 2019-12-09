@@ -14,14 +14,12 @@ import RealmSwift
     dynamic var word: String!
     dynamic var definition: String!
     dynamic var lesson: LessonItem!
-    dynamic var timeInsertToBox: Date?
     
-    convenience init(word: String, definition: String, Lesson: LessonItem, timeInsertToBox: Date? = nil) {
+    convenience init(word: String, definition: String, Lesson: LessonItem) {
         self.init()
         self.word = word
         self.definition = definition
         self.lesson = Lesson
-        self.timeInsertToBox = timeInsertToBox
     }
     
     override class func primaryKey() -> String? {

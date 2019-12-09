@@ -7,7 +7,7 @@
 //
 
 import Foundation
-// Nemidonam aslan lazem bod in ????
+
 enum LogInWayItem {
     case pinLogIn
     case faceLogIn
