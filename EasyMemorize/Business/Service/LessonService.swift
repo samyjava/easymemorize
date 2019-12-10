@@ -40,7 +40,7 @@ struct LessonService: LessonServiceType {
         return result ?? Completable.error(LessonServiceError.creationFailed)
     }
     
-    func editLesson(lesson: LessonItem, title: String?, image: String?, language: String?) -> Completable {
+    func edit(lesson: LessonItem, title: String?, image: String?, language: String?) -> Completable {
         let result = withRealm(title: "Edit Lesson") { realm -> Completable in
             try realm.write {
                 if let title = title {
@@ -58,7 +58,7 @@ struct LessonService: LessonServiceType {
         return result ?? Completable.error(LessonServiceError.editationFailed)
     }
     
-    func deleteLesson(lesson: LessonItem) -> Completable {
+    func delete(lesson: LessonItem) -> Completable {
         let result = withRealm(title: "Delete Lesson") { realm -> Completable in
             try realm.write {
                 realm.delete(lesson)
@@ -70,7 +70,7 @@ struct LessonService: LessonServiceType {
     
     func fetchAllLesson() -> Observable<Results<LessonItem>> {
         let result = withRealm(title: "Fetch all lesson") { realm -> Observable<Results<LessonItem>> in
-            let lessons = realm.objects(LessonItem.self)
+            let lessons = realm.objects(LessonItem.self).filter("id != 0")
             return Observable.collection(from: lessons)
         }
         return result ?? Observable.error(LessonServiceError.fetchFailed)
@@ -84,5 +84,17 @@ struct LessonService: LessonServiceType {
             return Completable.empty()
         }
         return result ?? Completable.error(LessonServiceError.assignationFailed(lesson))
+    }
+    
+    func getCards(by lessonId: Int) -> Observable<[CardItem]> {
+        let result = withRealm(title: "Get cards") { realm -> Observable<[CardItem]> in
+                if let lesson = realm.objects(LessonItem.self).filter("id == \(lessonId)").first {
+                    let cards = lesson.cards.toArray()
+                    return Observable.just(cards)
+                } else {
+                    return Observable.error(LessonServiceError.fetchFailed)
+            }
+        }
+        return result ?? Observable.error(LessonServiceError.fetchFailed)
     }
 }

@@ -23,14 +23,17 @@ protocol LessonServiceType {
     func createLesson(title: String, image: String?, language: String) -> Completable
     
     @discardableResult
-    func editLesson(lesson: LessonItem, title: String?, image: String?, language: String?) -> Completable
+    func edit(lesson: LessonItem, title: String?, image: String?, language: String?) -> Completable
     
     @discardableResult
-    func deleteLesson(lesson: LessonItem) -> Completable
+    func delete(lesson: LessonItem) -> Completable
     
     @discardableResult
     func fetchAllLesson() -> Observable<Results<LessonItem>>
     
     @discardableResult
     func assign(card: CardItem, to lesson: LessonItem) -> Completable
+    
+    @discardableResult
+    func getCards(by lessonId: Int) -> Observable<[CardItem]>
 }
