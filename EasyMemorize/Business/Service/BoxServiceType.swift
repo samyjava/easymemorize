@@ -11,7 +11,7 @@ import RxSwift
 
 enum BoxServiceError: Error {
     case creationFailed
-    case transitionFailed(BoxItem)
+    case transferFailed(CardItem)
     case resetFailed
 }
 
@@ -24,5 +24,5 @@ protocol BoxServiceType {
     func resetBoxes() -> Completable
     
     @discardableResult
-    func transitionTo(box no:Int) -> Completable
+    func transferCardTo(box no:Int, card: CardItem) -> Completable
 }
