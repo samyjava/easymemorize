@@ -1,0 +1,28 @@
+//
+//  BoxServiceType.swift
+//  EasyMemorize
+//
+//  Created by Yasaman Farahani Saba on 12/10/19.
+//  Copyright © 2019 Dream Catcher. All rights reserved.
+//
+
+import Foundation
+import RxSwift
+
+enum BoxServiceError: Error {
+    case creationFailed
+    case transitionFailed(BoxItem)
+    case resetFailed
+}
+
+
+protocol BoxServiceType {
+    @discardableResult
+    func createBox(no: Int, waitingTime: TimeInterval) -> Completable
+    
+    @discardableResult
+    func resetBoxes() -> Completable
+    
+    @discardableResult
+    func transitionTo(box no:Int) -> Completable
+}
