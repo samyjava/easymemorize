@@ -75,26 +75,5 @@ struct LessonService: LessonServiceType {
         }
         return result ?? Observable.error(LessonServiceError.fetchFailed)
     }
-    
-    func assign(card: CardItem, to lesson: LessonItem) -> Completable {
-        let result = withRealm(title: "Assign card to lesson") { realm -> Completable in
-            try realm.write {
-                card.lesson = lesson
-            }
-            return Completable.empty()
-        }
-        return result ?? Completable.error(LessonServiceError.assignationFailed(lesson))
-    }
-    
-    func getCards(by lessonId: Int) -> Observable<[CardItem]> {
-        let result = withRealm(title: "Get cards") { realm -> Observable<[CardItem]> in
-                if let lesson = realm.objects(LessonItem.self).filter("id == \(lessonId)").first {
-                    let cards = lesson.cards.toArray()
-                    return Observable.just(cards)
-                } else {
-                    return Observable.error(LessonServiceError.fetchFailed)
-            }
-        }
-        return result ?? Observable.error(LessonServiceError.fetchFailed)
-    }
+
 }

@@ -31,9 +31,5 @@ protocol LessonServiceType {
     @discardableResult
     func fetchAllLesson() -> Observable<Results<LessonItem>>
     
-    @discardableResult
-    func assign(card: CardItem, to lesson: LessonItem) -> Completable
     
-    @discardableResult
-    func getCards(by lessonId: Int) -> Observable<[CardItem]>
 }

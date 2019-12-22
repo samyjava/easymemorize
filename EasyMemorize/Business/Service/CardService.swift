@@ -35,7 +35,7 @@ struct CardService: CardServiceType {
         return result ?? Completable.error(CardServiceError.creationFailed)
     }
     
-    func edit(card: CardItem, word: String?, definition: String?) -> Observable<CardItem> {
+    func edit(card: CardItem, word: String?, definition: String?, lesson: LessonItem?) -> Observable<CardItem> {
         let result = withRealm(title: "Edit Card") { realm -> Observable<CardItem> in
             try realm.write {
                 if let word = word {
@@ -43,6 +43,9 @@ struct CardService: CardServiceType {
                 }
                 if let definition = definition {
                     card.definition = definition
+                }
+                if let lesson = lesson {
+                    card.lesson = lesson
                 }
             }
             return Observable.just(card)

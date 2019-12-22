@@ -20,7 +20,7 @@ protocol CardServiceType {
     func createCard(word: String, definition: String, Lesson: LessonItem) -> Completable
     
     @discardableResult
-    func edit(card: CardItem, word: String?, definition: String?) -> Observable<CardItem>
+    func edit(card: CardItem, word: String?, definition: String?, lesson: LessonItem?) -> Observable<CardItem>
     
     @discardableResult
     func delete(card: CardItem) -> Completable
