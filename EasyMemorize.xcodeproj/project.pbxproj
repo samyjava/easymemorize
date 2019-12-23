@@ -29,6 +29,7 @@
 		F296AC83238BB55700E8E5ED /* EasyMemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC82238BB55700E8E5ED /* EasyMemorizeUITests.swift */; };
 		F29B8B4C23AE0E09009C1BD0 /* CardServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B8B4B23AE0E09009C1BD0 /* CardServiceTest.swift */; };
 		F2A53AF2239B954F00F6E039 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A53AF1239B954F00F6E039 /* Card.storyboard */; };
+		F2ACB9D723AF65E300E1D2A7 /* BoxServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACB9D623AF65E300E1D2A7 /* BoxServiceTest.swift */; };
 		F2D0BD6A239E2763002B9DC3 /* LessonServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0BD69239E2763002B9DC3 /* LessonServiceType.swift */; };
 		F2D0BD6C239E389E002B9DC3 /* LessonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0BD6B239E389E002B9DC3 /* LessonService.swift */; };
 		F2D0BD6E239E6346002B9DC3 /* CardServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0BD6D239E6346002B9DC3 /* CardServiceType.swift */; };
@@ -87,6 +88,7 @@
 		F296AC84238BB55700E8E5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F29B8B4B23AE0E09009C1BD0 /* CardServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardServiceTest.swift; sourceTree = "<group>"; };
 		F2A53AF1239B954F00F6E039 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
+		F2ACB9D623AF65E300E1D2A7 /* BoxServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxServiceTest.swift; sourceTree = "<group>"; };
 		F2D0BD69239E2763002B9DC3 /* LessonServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonServiceType.swift; sourceTree = "<group>"; };
 		F2D0BD6B239E389E002B9DC3 /* LessonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonService.swift; sourceTree = "<group>"; };
 		F2D0BD6D239E6346002B9DC3 /* CardServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardServiceType.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 			children = (
 				F296AC77238BB55700E8E5ED /* LessonServiceTest.swift */,
 				F29B8B4B23AE0E09009C1BD0 /* CardServiceTest.swift */,
+				F2ACB9D623AF65E300E1D2A7 /* BoxServiceTest.swift */,
 			);
 			path = ServicesTest;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2ACB9D723AF65E300E1D2A7 /* BoxServiceTest.swift in Sources */,
 				F296AC78238BB55700E8E5ED /* LessonServiceTest.swift in Sources */,
 				F29B8B4C23AE0E09009C1BD0 /* CardServiceTest.swift in Sources */,
 			);

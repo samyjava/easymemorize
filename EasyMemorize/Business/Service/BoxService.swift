@@ -48,14 +48,20 @@ struct BoxService: BoxServiceType {
     
     func transferCardTo(box no:Int, card: CardItem) -> Completable {
         let result = withRealm(title: "Transition Card") { realm -> Completable in
-            guard let cardExist = realm.objects(BoxCardItem.self).filter("cardId == \(card.id)").first else{
-                return Completable.error(BoxServiceError.transferFailed(card))
+            if let cardExist = realm.objects(BoxCardItem.self).filter("cardId == \(card.id)").first{
+                try realm.write {
+                    cardExist.boxId = no
+                    cardExist.addDate = Date()
+                }
+                return Completable.empty()
+            } else {
+                let boxCardItem = BoxCardItem(boxId: no, cardId: card.id)
+                try realm.write {
+                    realm.add(boxCardItem)
+                }
+                return Completable.empty()
             }
-            try realm.write {
-                cardExist.boxId = no
-                cardExist.addDate = Date()
-            }
-            return Completable.empty()
+            
         }
         return result ?? Completable.error(BoxServiceError.transferFailed(card))
     }

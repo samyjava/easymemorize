@@ -18,4 +18,11 @@ import RealmSwift
     override class func primaryKey() -> String {
         return "cardId"
     }
+    
+    convenience init(boxId: Int, cardId: Int) {
+        self.init()
+        self.boxId = boxId
+        self.cardId = cardId
+        self.addDate = Date()
+    }
 }
