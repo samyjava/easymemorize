@@ -39,6 +39,8 @@
 		F2FC81C2239D69FA0054F7E1 /* LogInWayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FC81C1239D69FA0054F7E1 /* LogInWayItem.swift */; };
 		F2FD2BA723B0AC3C0004F695 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD2BA623B0AC3C0004F695 /* Scene.swift */; };
 		F2FD2BA923B0AF960004F695 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD2BA823B0AF960004F695 /* Tab.swift */; };
+		F2FD2BAB23B0B4F80004F695 /* Scene+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD2BAA23B0B4F80004F695 /* Scene+ViewController.swift */; };
+		F2FD2BAD23B0B8290004F695 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD2BAC23B0B8290004F695 /* BindableType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		F2FC81C1239D69FA0054F7E1 /* LogInWayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInWayItem.swift; sourceTree = "<group>"; };
 		F2FD2BA623B0AC3C0004F695 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		F2FD2BA823B0AF960004F695 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		F2FD2BAA23B0B4F80004F695 /* Scene+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scene+ViewController.swift"; sourceTree = "<group>"; };
+		F2FD2BAC23B0B8290004F695 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		F3C2F2DE2E0E9B70A0A017AB /* Pods-EasyMemorizeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMemorizeTests.release.xcconfig"; path = "Target Support Files/Pods-EasyMemorizeTests/Pods-EasyMemorizeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +164,7 @@
 			children = (
 				F21F2487238BCEBA00CFCFBF /* Storyboard */,
 				F21F2486238BCEA300CFCFBF /* ViewControler */,
+				F2FD2BAC23B0B8290004F695 /* BindableType.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				F26A304D239FB59700960192 /* SceneCoordinatorType.swift */,
 				F2FD2BA623B0AC3C0004F695 /* Scene.swift */,
 				F2FD2BA823B0AF960004F695 /* Tab.swift */,
+				F2FD2BAA23B0B4F80004F695 /* Scene+ViewController.swift */,
 			);
 			path = SceneCoordinator;
 			sourceTree = "<group>";
@@ -544,6 +550,7 @@
 				F2FC81C0239D69290054F7E1 /* UserItem.swift in Sources */,
 				F2FD2BA723B0AC3C0004F695 /* Scene.swift in Sources */,
 				F2D0BD6E239E6346002B9DC3 /* CardServiceType.swift in Sources */,
+				F2FD2BAD23B0B8290004F695 /* BindableType.swift in Sources */,
 				F2964B8D239D347200F4D223 /* CardItem.swift in Sources */,
 				F2FD2BA923B0AF960004F695 /* Tab.swift in Sources */,
 				F26A304E239FB59700960192 /* SceneCoordinatorType.swift in Sources */,
@@ -551,6 +558,7 @@
 				F296AC61238BB55000E8E5ED /* AppDelegate.swift in Sources */,
 				F2FC81C2239D69FA0054F7E1 /* LogInWayItem.swift in Sources */,
 				F296AC63238BB55000E8E5ED /* SceneDelegate.swift in Sources */,
+				F2FD2BAB23B0B4F80004F695 /* Scene+ViewController.swift in Sources */,
 				F2FC81BE239D5C6B0054F7E1 /* BoxCardItem.swift in Sources */,
 				F2964B8F239D37F600F4D223 /* BoxItem.swift in Sources */,
 			);

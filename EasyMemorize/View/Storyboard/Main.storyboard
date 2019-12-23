@@ -11,7 +11,7 @@
         <!--Register View Controller-->
         <scene sceneID="bWu-S0-VuQ">
             <objects>
-                <viewController id="H0m-UJ-krj" customClass="RegisterViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Register" id="H0m-UJ-krj" customClass="RegisterViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bTU-v5-ekm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
