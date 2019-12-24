@@ -16,6 +16,16 @@
 		F26A304A239F7DCE00960192 /* BoxServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A3049239F7DCE00960192 /* BoxServiceType.swift */; };
 		F26A304C239F873000960192 /* BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A304B239F873000960192 /* BoxService.swift */; };
 		F26A304E239FB59700960192 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A304D239FB59700960192 /* SceneCoordinatorType.swift */; };
+		F27F74A323B1EF5700789AF4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74A223B1EF5700789AF4 /* LoginViewModel.swift */; };
+		F27F74A923B1F04D00789AF4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74A823B1F04D00789AF4 /* LoginViewController.swift */; };
+		F27F74AB23B1F2B200789AF4 /* CreateLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74AA23B1F2B200789AF4 /* CreateLessonViewController.swift */; };
+		F27F74AD23B1F30700789AF4 /* CreateLessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74AC23B1F30700789AF4 /* CreateLessonViewModel.swift */; };
+		F27F74AF23B1F42200789AF4 /* CreateCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74AE23B1F42200789AF4 /* CreateCardViewModel.swift */; };
+		F27F74B123B1F44F00789AF4 /* CreateCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74B023B1F44F00789AF4 /* CreateCardViewController.swift */; };
+		F27F74B323B1F54700789AF4 /* ShowCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74B223B1F54700789AF4 /* ShowCardsViewModel.swift */; };
+		F27F74B523B1F58700789AF4 /* ShowCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74B423B1F58700789AF4 /* ShowCardsViewController.swift */; };
+		F27F74B723B1F68F00789AF4 /* ShowBoxCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74B623B1F68F00789AF4 /* ShowBoxCardsViewModel.swift */; };
+		F27F74B923B1F6CE00789AF4 /* ShowBoxCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74B823B1F6CE00789AF4 /* ShowBoxCardsViewController.swift */; };
 		F2964B87239D296600F4D223 /* LanguageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B86239D296600F4D223 /* LanguageItem.swift */; };
 		F2964B8B239D2B6900F4D223 /* LessonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B8A239D2B6900F4D223 /* LessonItem.swift */; };
 		F2964B8D239D347200F4D223 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B8C239D347200F4D223 /* CardItem.swift */; };
@@ -41,6 +51,7 @@
 		F2FD2BA923B0AF960004F695 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD2BA823B0AF960004F695 /* Tab.swift */; };
 		F2FD2BAB23B0B4F80004F695 /* Scene+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD2BAA23B0B4F80004F695 /* Scene+ViewController.swift */; };
 		F2FD2BAD23B0B8290004F695 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD2BAC23B0B8290004F695 /* BindableType.swift */; };
+		F2FD2BAF23B0BB550004F695 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD2BAE23B0BB550004F695 /* RegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +84,16 @@
 		F26A3049239F7DCE00960192 /* BoxServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxServiceType.swift; sourceTree = "<group>"; };
 		F26A304B239F873000960192 /* BoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxService.swift; sourceTree = "<group>"; };
 		F26A304D239FB59700960192 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
+		F27F74A223B1EF5700789AF4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F27F74A823B1F04D00789AF4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F27F74AA23B1F2B200789AF4 /* CreateLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLessonViewController.swift; sourceTree = "<group>"; };
+		F27F74AC23B1F30700789AF4 /* CreateLessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLessonViewModel.swift; sourceTree = "<group>"; };
+		F27F74AE23B1F42200789AF4 /* CreateCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewModel.swift; sourceTree = "<group>"; };
+		F27F74B023B1F44F00789AF4 /* CreateCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardViewController.swift; sourceTree = "<group>"; };
+		F27F74B223B1F54700789AF4 /* ShowCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCardsViewModel.swift; sourceTree = "<group>"; };
+		F27F74B423B1F58700789AF4 /* ShowCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCardsViewController.swift; sourceTree = "<group>"; };
+		F27F74B623B1F68F00789AF4 /* ShowBoxCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBoxCardsViewModel.swift; sourceTree = "<group>"; };
+		F27F74B823B1F6CE00789AF4 /* ShowBoxCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBoxCardsViewController.swift; sourceTree = "<group>"; };
 		F2964B86239D296600F4D223 /* LanguageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageItem.swift; sourceTree = "<group>"; };
 		F2964B8A239D2B6900F4D223 /* LessonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonItem.swift; sourceTree = "<group>"; };
 		F2964B8C239D347200F4D223 /* CardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
@@ -104,6 +125,7 @@
 		F2FD2BA823B0AF960004F695 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		F2FD2BAA23B0B4F80004F695 /* Scene+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scene+ViewController.swift"; sourceTree = "<group>"; };
 		F2FD2BAC23B0B8290004F695 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		F2FD2BAE23B0BB550004F695 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		F3C2F2DE2E0E9B70A0A017AB /* Pods-EasyMemorizeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMemorizeTests.release.xcconfig"; path = "Target Support Files/Pods-EasyMemorizeTests/Pods-EasyMemorizeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +195,11 @@
 			isa = PBXGroup;
 			children = (
 				F296AC64238BB55000E8E5ED /* RegisterViewController.swift */,
+				F27F74A823B1F04D00789AF4 /* LoginViewController.swift */,
+				F27F74AA23B1F2B200789AF4 /* CreateLessonViewController.swift */,
+				F27F74B023B1F44F00789AF4 /* CreateCardViewController.swift */,
+				F27F74B423B1F58700789AF4 /* ShowCardsViewController.swift */,
+				F27F74B823B1F6CE00789AF4 /* ShowBoxCardsViewController.swift */,
 			);
 			path = ViewControler;
 			sourceTree = "<group>";
@@ -226,6 +253,12 @@
 		F21F248B238BCF2100CFCFBF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F2FD2BAE23B0BB550004F695 /* RegisterViewModel.swift */,
+				F27F74A223B1EF5700789AF4 /* LoginViewModel.swift */,
+				F27F74AC23B1F30700789AF4 /* CreateLessonViewModel.swift */,
+				F27F74AE23B1F42200789AF4 /* CreateCardViewModel.swift */,
+				F27F74B223B1F54700789AF4 /* ShowCardsViewModel.swift */,
+				F27F74B623B1F68F00789AF4 /* ShowBoxCardsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -540,10 +573,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27F74A323B1EF5700789AF4 /* LoginViewModel.swift in Sources */,
 				F2964B8B239D2B6900F4D223 /* LessonItem.swift in Sources */,
+				F27F74B923B1F6CE00789AF4 /* ShowBoxCardsViewController.swift in Sources */,
+				F27F74B123B1F44F00789AF4 /* CreateCardViewController.swift in Sources */,
 				F2D0BD70239E8475002B9DC3 /* CardService.swift in Sources */,
+				F27F74AB23B1F2B200789AF4 /* CreateLessonViewController.swift in Sources */,
 				F296AC65238BB55000E8E5ED /* RegisterViewController.swift in Sources */,
+				F27F74AF23B1F42200789AF4 /* CreateCardViewModel.swift in Sources */,
 				F2D0BD6A239E2763002B9DC3 /* LessonServiceType.swift in Sources */,
+				F27F74B323B1F54700789AF4 /* ShowCardsViewModel.swift in Sources */,
 				F2D0BD6C239E389E002B9DC3 /* LessonService.swift in Sources */,
 				F26A304C239F873000960192 /* BoxService.swift in Sources */,
 				F26A304A239F7DCE00960192 /* BoxServiceType.swift in Sources */,
@@ -551,13 +590,18 @@
 				F2FD2BA723B0AC3C0004F695 /* Scene.swift in Sources */,
 				F2D0BD6E239E6346002B9DC3 /* CardServiceType.swift in Sources */,
 				F2FD2BAD23B0B8290004F695 /* BindableType.swift in Sources */,
+				F27F74A923B1F04D00789AF4 /* LoginViewController.swift in Sources */,
+				F27F74B723B1F68F00789AF4 /* ShowBoxCardsViewModel.swift in Sources */,
+				F27F74B523B1F58700789AF4 /* ShowCardsViewController.swift in Sources */,
 				F2964B8D239D347200F4D223 /* CardItem.swift in Sources */,
 				F2FD2BA923B0AF960004F695 /* Tab.swift in Sources */,
 				F26A304E239FB59700960192 /* SceneCoordinatorType.swift in Sources */,
 				F2964B87239D296600F4D223 /* LanguageItem.swift in Sources */,
+				F2FD2BAF23B0BB550004F695 /* RegisterViewModel.swift in Sources */,
 				F296AC61238BB55000E8E5ED /* AppDelegate.swift in Sources */,
 				F2FC81C2239D69FA0054F7E1 /* LogInWayItem.swift in Sources */,
 				F296AC63238BB55000E8E5ED /* SceneDelegate.swift in Sources */,
+				F27F74AD23B1F30700789AF4 /* CreateLessonViewModel.swift in Sources */,
 				F2FD2BAB23B0B4F80004F695 /* Scene+ViewController.swift in Sources */,
 				F2FC81BE239D5C6B0054F7E1 /* BoxCardItem.swift in Sources */,
 				F2964B8F239D37F600F4D223 /* BoxItem.swift in Sources */,

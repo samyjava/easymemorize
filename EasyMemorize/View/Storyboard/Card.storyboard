@@ -2,17 +2,16 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Show Cards View Controller-->
         <scene sceneID="afD-bg-5hp">
             <objects>
-                <viewController id="DZT-dt-ePG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShowCards" id="DZT-dt-ePG" customClass="ShowCardsViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GCk-Qi-U2K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,13 +30,13 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Jdv-zc-43z">
-                                        <rect key="frame" x="89" y="575" width="236" height="243"/>
+                                        <rect key="frame" x="111.5" y="575" width="191" height="243"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sendMail" translatesAutoresizingMaskIntoConstraints="NO" id="geq-kq-eBd">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="243"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="243"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3W-8k-zQX">
-                                                <rect key="frame" x="98" y="0.0" width="138" height="243"/>
+                                                <rect key="frame" x="53" y="0.0" width="138" height="243"/>
                                                 <state key="normal" title="Send to liethner box"/>
                                             </button>
                                         </subviews>
@@ -135,7 +134,7 @@
         <!--Create View Controller-->
         <scene sceneID="NVI-JJ-EAe">
             <objects>
-                <viewController id="Bc4-4h-Ajt" userLabel="Create View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateCard" id="Bc4-4h-Ajt" userLabel="Create View Controller" customClass="CreateCardViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F77-6w-Ybv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

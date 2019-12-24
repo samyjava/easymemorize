@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="-36.231884057971016" y="-112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="DBB-ol-4do">
             <objects>
-                <viewController id="cZr-Ph-kqf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="cZr-Ph-kqf" customClass="LoginViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o5i-5O-e7T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

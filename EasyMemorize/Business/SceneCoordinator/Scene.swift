@@ -9,11 +9,11 @@
 import Foundation
 
 enum Scene {
-    case splash
-    case register
-    case login
-    case createLesson
-    case createCard
-    case showCards
-    case showBoxCards
+    //case splash
+    case register(viewModel: RegisterViewModel)
+    case login(viewModel: LoginViewModel)
+    case createLesson(viewModel: CreateLessonViewModel)
+    case createCard(viewModel: CreateCardViewModel)
+    case showCards(viewModel: ShowCardsViewModel)
+    case showBoxCards(viewModel: ShowBoxCardsViewModel)
 }

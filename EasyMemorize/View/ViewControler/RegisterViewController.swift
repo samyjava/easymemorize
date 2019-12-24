@@ -8,7 +8,12 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, BindableType {
+    
+    var viewModel: RegisterViewModel!
+    func bindViewModel() {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
