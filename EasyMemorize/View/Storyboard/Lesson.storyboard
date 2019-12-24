@@ -84,7 +84,7 @@
         <!--LessonCardsListView Controller-->
         <scene sceneID="4EK-j1-otc">
             <objects>
-                <viewController id="2wR-BN-2tV" userLabel="LessonCardsListView Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Lesson" id="2wR-BN-2tV" userLabel="LessonCardsListView Controller" customClass="LessonViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oCV-BY-XNe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

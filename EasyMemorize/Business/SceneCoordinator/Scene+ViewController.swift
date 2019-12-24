@@ -49,6 +49,12 @@ extension Scene {
             var viewController = storyboard.instantiateViewController(identifier: "ShowBoxCards") as ShowBoxCardsViewController
             viewController.bindViewModel(to: viewModel)
             return viewController
+            
+        case .tabBar(let viewModel):
+            let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+            var viewController = storyboard.instantiateViewController(identifier: "TabBar") as TabBarViewController
+            viewController.bindViewModel(to: viewModel)
+            return viewController
         }
     }
 }

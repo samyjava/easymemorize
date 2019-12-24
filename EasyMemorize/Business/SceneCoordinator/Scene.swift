@@ -16,4 +16,5 @@ enum Scene {
     case createCard(viewModel: CreateCardViewModel)
     case showCards(viewModel: ShowCardsViewModel)
     case showBoxCards(viewModel: ShowBoxCardsViewModel)
+    case tabBar(viewModel: TabBarViewModel)
 }

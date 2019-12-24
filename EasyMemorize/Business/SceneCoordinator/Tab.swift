@@ -9,8 +9,24 @@
 import Foundation
 
 
-enum Tab {
-    case dashboard
-    case lesson
-    case leithnerBox
+enum Tab: Equatable {
+    
+    static var tabs: [Tab] = []
+    
+    static func ==(lhs: Tab, rhs: Tab) -> Bool {
+        switch (lhs,rhs) {
+        case (.dashboard, .dashboard):
+            return true
+        case (.lesson, .lesson):
+            return true
+        case (.Box, .Box):
+            return true
+        default:
+            return false
+        }
+    }
+    
+    case dashboard(viewModel: DashboardViewModel)
+    case lesson(viewModel: LessonViewModel)
+    case Box(viewModel: BoxViewModel)
 }
