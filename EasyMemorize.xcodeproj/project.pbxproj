@@ -36,6 +36,8 @@
 		F27F74CD23B23DA700789AF4 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74CC23B23DA700789AF4 /* LessonViewController.swift */; };
 		F27F74CF23B23E7F00789AF4 /* BoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74CE23B23E7F00789AF4 /* BoxViewModel.swift */; };
 		F27F74D123B23EBC00789AF4 /* BoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74D023B23EBC00789AF4 /* BoxViewController.swift */; };
+		F27F74D323B2413700789AF4 /* TransitionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74D223B2413700789AF4 /* TransitionType.swift */; };
+		F27F74D523B2456F00789AF4 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74D423B2456F00789AF4 /* SceneCoordinator.swift */; };
 		F2964B87239D296600F4D223 /* LanguageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B86239D296600F4D223 /* LanguageItem.swift */; };
 		F2964B8B239D2B6900F4D223 /* LessonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B8A239D2B6900F4D223 /* LessonItem.swift */; };
 		F2964B8D239D347200F4D223 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2964B8C239D347200F4D223 /* CardItem.swift */; };
@@ -114,6 +116,8 @@
 		F27F74CC23B23DA700789AF4 /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 		F27F74CE23B23E7F00789AF4 /* BoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxViewModel.swift; sourceTree = "<group>"; };
 		F27F74D023B23EBC00789AF4 /* BoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxViewController.swift; sourceTree = "<group>"; };
+		F27F74D223B2413700789AF4 /* TransitionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionType.swift; sourceTree = "<group>"; };
+		F27F74D423B2456F00789AF4 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		F2964B86239D296600F4D223 /* LanguageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageItem.swift; sourceTree = "<group>"; };
 		F2964B8A239D2B6900F4D223 /* LessonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonItem.swift; sourceTree = "<group>"; };
 		F2964B8C239D347200F4D223 /* CardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
@@ -268,10 +272,12 @@
 			isa = PBXGroup;
 			children = (
 				F26A304D239FB59700960192 /* SceneCoordinatorType.swift */,
+				F27F74D423B2456F00789AF4 /* SceneCoordinator.swift */,
 				F2FD2BA623B0AC3C0004F695 /* Scene.swift */,
 				F2FD2BA823B0AF960004F695 /* Tab.swift */,
 				F2FD2BAA23B0B4F80004F695 /* Scene+ViewController.swift */,
 				F27F74BC23B203C900789AF4 /* Tab+ViewController.swift */,
+				F27F74D223B2413700789AF4 /* TransitionType.swift */,
 			);
 			path = SceneCoordinator;
 			sourceTree = "<group>";
@@ -612,6 +618,7 @@
 				F2D0BD70239E8475002B9DC3 /* CardService.swift in Sources */,
 				F27F74BF23B2084800789AF4 /* TabBarViewModel.swift in Sources */,
 				F27F74AB23B1F2B200789AF4 /* CreateLessonViewController.swift in Sources */,
+				F27F74D523B2456F00789AF4 /* SceneCoordinator.swift in Sources */,
 				F296AC65238BB55000E8E5ED /* RegisterViewController.swift in Sources */,
 				F27F74AF23B1F42200789AF4 /* CreateCardViewModel.swift in Sources */,
 				F27F74CF23B23E7F00789AF4 /* BoxViewModel.swift in Sources */,
@@ -620,6 +627,7 @@
 				F2D0BD6C239E389E002B9DC3 /* LessonService.swift in Sources */,
 				F27F74CD23B23DA700789AF4 /* LessonViewController.swift in Sources */,
 				F26A304C239F873000960192 /* BoxService.swift in Sources */,
+				F27F74D323B2413700789AF4 /* TransitionType.swift in Sources */,
 				F26A304A239F7DCE00960192 /* BoxServiceType.swift in Sources */,
 				F2FC81C0239D69290054F7E1 /* UserItem.swift in Sources */,
 				F27F74BD23B203C900789AF4 /* Tab+ViewController.swift in Sources */,
