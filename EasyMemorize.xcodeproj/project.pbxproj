@@ -13,6 +13,7 @@
 		F21F2491238C1EEF00CFCFBF /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21F2490238C1EEF00CFCFBF /* Dashboard.storyboard */; };
 		F22AC5ED238D08CA00DECCB1 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */; };
 		F2636D57239BC2D400AC0339 /* Box.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2636D56239BC2D400AC0339 /* Box.storyboard */; };
+		F268FF9223B3456200463973 /* UserServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F268FF9123B3456200463973 /* UserServiceType.swift */; };
 		F26A304A239F7DCE00960192 /* BoxServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A3049239F7DCE00960192 /* BoxServiceType.swift */; };
 		F26A304C239F873000960192 /* BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A304B239F873000960192 /* BoxService.swift */; };
 		F26A304E239FB59700960192 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A304D239FB59700960192 /* SceneCoordinatorType.swift */; };
@@ -93,6 +94,7 @@
 		F21F2490238C1EEF00CFCFBF /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
 		F2636D56239BC2D400AC0339 /* Box.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Box.storyboard; sourceTree = "<group>"; };
+		F268FF9123B3456200463973 /* UserServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceType.swift; sourceTree = "<group>"; };
 		F26A3049239F7DCE00960192 /* BoxServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxServiceType.swift; sourceTree = "<group>"; };
 		F26A304B239F873000960192 /* BoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxService.swift; sourceTree = "<group>"; };
 		F26A304D239FB59700960192 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 				F2D0BD6F239E8475002B9DC3 /* CardService.swift */,
 				F26A3049239F7DCE00960192 /* BoxServiceType.swift */,
 				F26A304B239F873000960192 /* BoxService.swift */,
+				F268FF9123B3456200463973 /* UserServiceType.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -616,6 +619,7 @@
 				F27F74B123B1F44F00789AF4 /* CreateCardViewController.swift in Sources */,
 				F27F74C723B20B3600789AF4 /* TabBarViewController.swift in Sources */,
 				F2D0BD70239E8475002B9DC3 /* CardService.swift in Sources */,
+				F268FF9223B3456200463973 /* UserServiceType.swift in Sources */,
 				F27F74BF23B2084800789AF4 /* TabBarViewModel.swift in Sources */,
 				F27F74AB23B1F2B200789AF4 /* CreateLessonViewController.swift in Sources */,
 				F27F74D523B2456F00789AF4 /* SceneCoordinator.swift in Sources */,

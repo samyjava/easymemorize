@@ -30,6 +30,4 @@ protocol LessonServiceType {
     
     @discardableResult
     func fetchAllLesson() -> Observable<Results<LessonItem>>
-    
-    
 }

@@ -11,12 +11,11 @@ import Foundation
 class UserItem {
     var prsImage: String?
     var userName: String!
-    var logInWay: LogInWayItem!
+    var loginWay: LogInWayItem!
     
-    convenience init(userName: String, logInWay: LogInWayItem, prsImage: String? = nil) {
-        self.init()
+    init(userName: String, loginWay: LogInWayItem, prsImage: String? = nil) {
         self.userName = userName
-        self.logInWay = logInWay
+        self.loginWay = loginWay
         self.prsImage = prsImage
     }
     

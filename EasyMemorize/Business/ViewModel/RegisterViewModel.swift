@@ -10,5 +10,6 @@ import Foundation
 
 
 struct RegisterViewModel {
-    
+    let sceneCoordinator: SceneCoordinatorType!
+    let 
 }
