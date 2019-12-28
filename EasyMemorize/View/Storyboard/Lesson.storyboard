@@ -59,7 +59,15 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vy1-XY-OoW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="qLA-9e-8dT"/>
+                                    <navigationItem title="Title" id="qLA-9e-8dT">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="XIQ-fG-SkW">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nh4-wn-Z8V">
+                                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Create"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>

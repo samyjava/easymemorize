@@ -36,6 +36,7 @@ struct LoginViewModel {
         }
     }
     
+    
     func detectBiometric() -> CocoaAction {
         return CocoaAction {
             let context = LAContext()
