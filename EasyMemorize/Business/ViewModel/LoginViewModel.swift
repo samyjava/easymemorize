@@ -9,9 +9,11 @@
 import Foundation
 import RxSwift
 import Action
+import LocalAuthentication
 
 enum LoginViewModelError: Error {
     case authenticationFailed
+    case biometricAuthenticationFailed
 }
 
 struct LoginViewModel {
@@ -30,6 +32,25 @@ struct LoginViewModel {
             }, onCompleted: {
                 let tabBarViewModel = TabBarViewModel()
                 self.sceneCoordinator.sceneTransition(to: .tabBar(viewModel: tabBarViewModel), type: .root)
+            }).asObservable().map{_ in}
+        }
+    }
+    
+    func detectBiometric() -> CocoaAction {
+        return CocoaAction {
+            let context = LAContext()
+            var loginSuccess = false
+            var loginError: Error?
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "We are about to login") { success, error in
+                loginSuccess = success
+                loginError = error
+            }
+            guard loginSuccess, loginError == nil else {
+                return Observable<Void>.error(LoginViewModelError.biometricAuthenticationFailed)
+            }
+            let tabBarViewModel = TabBarViewModel()
+            return self.sceneCoordinator.sceneTransition(to: .tabBar(viewModel: tabBarViewModel), type: .root).do(onError: { error in
+                throw error
             }).asObservable().map{_ in}
         }
     }
