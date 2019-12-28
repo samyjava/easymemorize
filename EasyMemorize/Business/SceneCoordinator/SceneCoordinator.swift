@@ -25,45 +25,50 @@ class SceneCoordinator: SceneCoordinatorType {
         self.window = window
     }
     
-    func sceneTransition(to scene: Scene, type: TransitionType) throws {
+    func sceneTransition(to scene: Scene, type: TransitionType) -> Completable {
         switch type {
         case .root:
             let viewController = scene.viewController()
             self.window.rootViewController = viewController
             self.currentViewController = viewController
+            return Completable.empty()
             
         case .modal:
             let viewController = scene.viewController()
             self.currentViewController.present(viewController, animated: true, completion: nil)
             self.currentViewController = viewController
+            return Completable.empty()
             
         case .push:
             guard let navigationController = self.currentViewController.navigationController else {
-                throw SceneCoordinatorError.noNavigationController
+                return Completable.error(SceneCoordinatorError.noNavigationController)
             }
             let viewController = scene.viewController()
             navigationController.pushViewController(viewController, animated: true)
             self.currentViewController = viewController
             self.pushDepth += 1
             navigationController.tabBarController?.tabBar.isHidden = true
+            return Completable.empty()
         }
     }
     
-    func switchTab(to tab: Tab) throws {
+    func switchTab(to tab: Tab) -> Completable {
         guard let tabBarController = self.currentViewController.tabBarController else {
-            throw SceneCoordinatorError.noTabBarController
+            return Completable.error(SceneCoordinatorError.noTabBarController)
         }
         guard let index = Tab.tabs.firstIndex(of: tab) else {
-            throw SceneCoordinatorError.noValidTab
+            return Completable.error(SceneCoordinatorError.noValidTab)
         }
         tabBarController.selectedIndex = index
         self.currentViewController = tabBarController.viewControllers![index]
+        return Completable.empty()
     }
     
-    func pop() throws {
+    func pop() -> Completable {
         if let presenter = self.currentViewController.presentingViewController {
             self.currentViewController.dismiss(animated: true, completion: nil)
             self.currentViewController = presenter
+            return Completable.empty()
         } else if let navigationController = self.currentViewController.navigationController {
             navigationController.popViewController(animated: true)
             self.currentViewController = navigationController.visibleViewController
@@ -71,12 +76,13 @@ class SceneCoordinator: SceneCoordinatorType {
             if self.pushDepth == 0 {
                 navigationController.tabBarController?.tabBar.isHidden = false
             }
+            return Completable.empty()
         } else {
-            throw SceneCoordinatorError.popNotValid
+            return Completable.error(SceneCoordinatorError.popNotValid)
         }
     }
     
-    func createTabBar() throws {
+    func createTabBar() -> Completable {
         // Create ViewModels
         let dashboardViewModel = DashboardViewModel()
         let lessonViewModel = LessonViewModel()
@@ -87,6 +93,7 @@ class SceneCoordinator: SceneCoordinatorType {
         let boxTab = Tab.Box(viewModel: boxViewModel)
 
         Tab.tabs.append(contentsOf: [dashboardTab, lessonTab, boxTab])
+        return Completable.empty()
     }
     
     

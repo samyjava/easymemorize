@@ -19,13 +19,13 @@ enum UserServiceError: Error {
 
 protocol UserServiceType {
     @discardableResult
-    func create(userName: String, prsImage: String?, loginWay: LogInWayItem?) -> Completable
+    func create(user: UserItem) -> Completable
     
     @discardableResult
     func athenticate(password: String) -> Completable
     
     @discardableResult
-    func edit(user: UserItem, userName: String?, prsImage: String?, loginWay: LogInWayItem?) -> Completable
+    func edit(user: UserItem, userName: String?, prsImage: String?, loginWay: LoginWayItem?) -> Completable
     
     @discardableResult
     func delete(user: UserItem) -> Completable

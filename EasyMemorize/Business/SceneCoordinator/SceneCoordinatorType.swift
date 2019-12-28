@@ -10,8 +10,15 @@ import Foundation
 import RxSwift
 
 protocol SceneCoordinatorType {
-    func sceneTransition(to scene: Scene, type: TransitionType) throws
-    func switchTab(to tab: Tab) throws
-    func pop() throws
-    func createTabBar() throws
+    @discardableResult
+    func sceneTransition(to scene: Scene, type: TransitionType) -> Completable
+    
+    @discardableResult
+    func switchTab(to tab: Tab) -> Completable
+    
+    @discardableResult
+    func pop() -> Completable
+    
+    @discardableResult
+    func createTabBar() -> Completable
 }
