@@ -30,8 +30,7 @@ struct CreateLessonViewModel {
             return self.lessonService.createLesson(title: lesson.title, image: lesson.image, language: lesson.language).do(onError: { error in
                 throw error
             }, onCompleted: {
-                let lessonViewModel = LessonViewModel()
-                self.sceneCoordinator.switchTab(to: .lesson(viewModel: lessonViewModel))
+                self.sceneCoordinator.pop()
             }).asObservable().map{_ in}
         }
     }

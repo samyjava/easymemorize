@@ -68,10 +68,10 @@ struct LessonService: LessonServiceType {
         return result ?? Completable.error(LessonServiceError.deletionFailed(lesson))
     }
     
-    func fetchAllLesson() -> Observable<Results<LessonItem>> {
-        let result = withRealm(title: "Fetch all lesson") { realm -> Observable<Results<LessonItem>> in
+    func fetchAllLesson() -> Observable<[LessonItem]> {
+        let result = withRealm(title: "Fetch all lesson") { realm -> Observable<[LessonItem]> in
             let lessons = realm.objects(LessonItem.self).filter("id != 0")
-            return Observable.collection(from: lessons)
+            return Observable.array(from: lessons)
         }
         return result ?? Observable.error(LessonServiceError.fetchFailed)
     }

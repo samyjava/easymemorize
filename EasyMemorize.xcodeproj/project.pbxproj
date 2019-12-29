@@ -11,6 +11,8 @@
 		638A14263D9DC7A7EC0FE731 /* Pods_EasyMemorizeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322582C9A64DA12059F28F5C /* Pods_EasyMemorizeTests.framework */; };
 		F21F248F238BD0D300CFCFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21F248E238BD0D300CFCFBF /* Main.storyboard */; };
 		F22AC5ED238D08CA00DECCB1 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */; };
+		F2615B2D23B8EF9600F58DF5 /* LessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2615B2C23B8EF9600F58DF5 /* LessonViewModel.swift */; };
+		F2615B2F23B8EFDC00F58DF5 /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2615B2E23B8EFDC00F58DF5 /* LessonsViewController.swift */; };
 		F2636D57239BC2D400AC0339 /* Box.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2636D56239BC2D400AC0339 /* Box.storyboard */; };
 		F268FF9223B3456200463973 /* UserServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F268FF9123B3456200463973 /* UserServiceType.swift */; };
 		F268FF9423B3502D00463973 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F268FF9323B3502D00463973 /* UserService.swift */; };
@@ -31,7 +33,7 @@
 		F27F74BF23B2084800789AF4 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74BE23B2084800789AF4 /* TabBarViewModel.swift */; };
 		F27F74C123B208F200789AF4 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F27F74C023B208F200789AF4 /* TabBar.storyboard */; };
 		F27F74C723B20B3600789AF4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74C623B20B3600789AF4 /* TabBarViewController.swift */; };
-		F27F74CB23B23D8300789AF4 /* LessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74CA23B23D8300789AF4 /* LessonViewModel.swift */; };
+		F27F74CB23B23D8300789AF4 /* LessonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74CA23B23D8300789AF4 /* LessonsViewModel.swift */; };
 		F27F74CD23B23DA700789AF4 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74CC23B23DA700789AF4 /* LessonViewController.swift */; };
 		F27F74CF23B23E7F00789AF4 /* BoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74CE23B23E7F00789AF4 /* BoxViewModel.swift */; };
 		F27F74D123B23EBC00789AF4 /* BoxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74D023B23EBC00789AF4 /* BoxViewController.swift */; };
@@ -90,6 +92,8 @@
 		E5EF1047C4E86A85728823E0 /* Pods-EasyMemorize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMemorize.debug.xcconfig"; path = "Target Support Files/Pods-EasyMemorize/Pods-EasyMemorize.debug.xcconfig"; sourceTree = "<group>"; };
 		F21F248E238BD0D300CFCFBF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
+		F2615B2C23B8EF9600F58DF5 /* LessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewModel.swift; sourceTree = "<group>"; };
+		F2615B2E23B8EFDC00F58DF5 /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
 		F2636D56239BC2D400AC0339 /* Box.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Box.storyboard; sourceTree = "<group>"; };
 		F268FF9123B3456200463973 /* UserServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServiceType.swift; sourceTree = "<group>"; };
 		F268FF9323B3502D00463973 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -110,7 +114,7 @@
 		F27F74BE23B2084800789AF4 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		F27F74C023B208F200789AF4 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		F27F74C623B20B3600789AF4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		F27F74CA23B23D8300789AF4 /* LessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewModel.swift; sourceTree = "<group>"; };
+		F27F74CA23B23D8300789AF4 /* LessonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewModel.swift; sourceTree = "<group>"; };
 		F27F74CC23B23DA700789AF4 /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 		F27F74CE23B23E7F00789AF4 /* BoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxViewModel.swift; sourceTree = "<group>"; };
 		F27F74D023B23EBC00789AF4 /* BoxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 				F27F74C623B20B3600789AF4 /* TabBarViewController.swift */,
 				F27F74CC23B23DA700789AF4 /* LessonViewController.swift */,
 				F27F74D023B23EBC00789AF4 /* BoxViewController.swift */,
+				F2615B2E23B8EFDC00F58DF5 /* LessonsViewController.swift */,
 			);
 			path = ViewControler;
 			sourceTree = "<group>";
@@ -290,8 +295,9 @@
 				F27F74B223B1F54700789AF4 /* ShowCardsViewModel.swift */,
 				F27F74B623B1F68F00789AF4 /* ShowBoxCardsViewModel.swift */,
 				F27F74BE23B2084800789AF4 /* TabBarViewModel.swift */,
-				F27F74CA23B23D8300789AF4 /* LessonViewModel.swift */,
+				F27F74CA23B23D8300789AF4 /* LessonsViewModel.swift */,
 				F27F74CE23B23E7F00789AF4 /* BoxViewModel.swift */,
+				F2615B2C23B8EF9600F58DF5 /* LessonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -626,6 +632,7 @@
 				F27F74CD23B23DA700789AF4 /* LessonViewController.swift in Sources */,
 				F26A304C239F873000960192 /* BoxService.swift in Sources */,
 				F27F74D323B2413700789AF4 /* TransitionType.swift in Sources */,
+				F2615B2D23B8EF9600F58DF5 /* LessonViewModel.swift in Sources */,
 				F26A304A239F7DCE00960192 /* BoxServiceType.swift in Sources */,
 				F2FC81C0239D69290054F7E1 /* UserItem.swift in Sources */,
 				F27F74BD23B203C900789AF4 /* Tab+ViewController.swift in Sources */,
@@ -641,11 +648,12 @@
 				F26A304E239FB59700960192 /* SceneCoordinatorType.swift in Sources */,
 				F2964B87239D296600F4D223 /* LanguageItem.swift in Sources */,
 				F2FD2BAF23B0BB550004F695 /* RegisterViewModel.swift in Sources */,
+				F2615B2F23B8EFDC00F58DF5 /* LessonsViewController.swift in Sources */,
 				F296AC61238BB55000E8E5ED /* AppDelegate.swift in Sources */,
 				F2FC81C2239D69FA0054F7E1 /* LoginWayItem.swift in Sources */,
 				F296AC63238BB55000E8E5ED /* SceneDelegate.swift in Sources */,
 				F27F74AD23B1F30700789AF4 /* CreateLessonViewModel.swift in Sources */,
-				F27F74CB23B23D8300789AF4 /* LessonViewModel.swift in Sources */,
+				F27F74CB23B23D8300789AF4 /* LessonsViewModel.swift in Sources */,
 				F2FD2BAB23B0B4F80004F695 /* Scene+ViewController.swift in Sources */,
 				F2FC81BE239D5C6B0054F7E1 /* BoxCardItem.swift in Sources */,
 				F2964B8F239D37F600F4D223 /* BoxItem.swift in Sources */,

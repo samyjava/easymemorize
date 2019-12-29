@@ -83,11 +83,12 @@ class SceneCoordinator: SceneCoordinatorType {
     }
     
     func createTabBar() -> Completable {
+        let lessonService = LessonService()
         // Create ViewModels
-        let lessonViewModel = LessonViewModel()
+        let lessonsViewModel = LessonsViewModel(sceneCoordinator: self, lessonService: lessonService)
         let boxViewModel = BoxViewModel()
         // Create Tabs
-        let lessonTab = Tab.lesson(viewModel: lessonViewModel)
+        let lessonTab = Tab.lessons(viewModel: lessonsViewModel)
         let boxTab = Tab.Box(viewModel: boxViewModel)
 
         Tab.tabs.append(contentsOf: [lessonTab, boxTab])

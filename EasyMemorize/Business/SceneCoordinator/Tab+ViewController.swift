@@ -12,9 +12,10 @@ extension Tab {
     func viewController() -> UIViewController {
         switch self {
             
-        case .lesson(let viewModel):
+        case .lessons(let viewModel):
             let storyboard = UIStoryboard(name: "Lesson", bundle: nil)
-            var viewController = storyboard.instantiateViewController(identifier: "Lesson") as LessonViewController
+            let nc = storyboard.instantiateViewController(identifier: "Lessons") as UINavigationController
+            var viewController = nc.viewControllers.first as! LessonsViewController
             viewController.bindViewModel(to: viewModel)
             viewController.tabBarItem.title = "Lesson"
             viewController.tabBarItem.image = UIImage(systemName: "book")
@@ -22,7 +23,8 @@ extension Tab {
             
         case .Box(let viewModel):
             let storyboard = UIStoryboard(name: "Box", bundle: nil)
-            var viewController = storyboard.instantiateViewController(identifier: "Box") as BoxViewController
+            let nc = storyboard.instantiateViewController(identifier: "Box") as UINavigationController
+            var viewController = nc.viewControllers.first as! BoxViewController
             viewController.bindViewModel(to: viewModel)
             viewController.tabBarItem.title = "Leithner Box"
             viewController.tabBarItem.image = UIImage(systemName: "cube.box")

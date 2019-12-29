@@ -92,7 +92,7 @@
         <!--Navigation Controller-->
         <scene sceneID="k6E-2L-LN9">
             <objects>
-                <navigationController id="MxE-XD-ifj" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Box" id="MxE-XD-ifj" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zdH-6t-RUH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="-5668" y="79"/>
         </scene>
-        <!--Dashboard View Controller-->
+        <!--Box View Controller-->
         <scene sceneID="X5L-FX-bQ4">
             <objects>
-                <viewController storyboardIdentifier="Dashboard" id="79p-Lk-7Sp" customClass="DashboardViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="79p-Lk-7Sp" customClass="BoxViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Irx-VY-o9R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

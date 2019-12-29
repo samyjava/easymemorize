@@ -30,7 +30,7 @@ struct LoginViewModel {
             self.userService.athenticate(password: password).do(onError: {_ in
                 throw LoginViewModelError.authenticationFailed
             }, onCompleted: {
-                let tabBarViewModel = TabBarViewModel()
+                let tabBarViewModel = TabBarViewModel(sceneCoordinator: self.sceneCoordinator)
                 self.sceneCoordinator.sceneTransition(to: .tabBar(viewModel: tabBarViewModel), type: .root)
             }).asObservable().map{_ in}
         }
@@ -49,7 +49,7 @@ struct LoginViewModel {
             guard loginSuccess, loginError == nil else {
                 return Observable<Void>.error(LoginViewModelError.biometricAuthenticationFailed)
             }
-            let tabBarViewModel = TabBarViewModel()
+            let tabBarViewModel = TabBarViewModel(sceneCoordinator: self.sceneCoordinator)
             return self.sceneCoordinator.sceneTransition(to: .tabBar(viewModel: tabBarViewModel), type: .root).do(onError: { error in
                 throw error
             }).asObservable().map{_ in}

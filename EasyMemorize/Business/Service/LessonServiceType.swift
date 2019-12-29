@@ -29,5 +29,5 @@ protocol LessonServiceType {
     func delete(lesson: LessonItem) -> Completable
     
     @discardableResult
-    func fetchAllLesson() -> Observable<Results<LessonItem>>
+    func fetchAllLesson() -> Observable<[LessonItem]>
 }

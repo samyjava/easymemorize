@@ -23,7 +23,7 @@ struct RegisterViewModel {
     
     func register() -> Action<UserItem,Void> {
         return Action { user in
-            let tabBarViewModel = TabBarViewModel()
+            let tabBarViewModel = TabBarViewModel(sceneCoordinator: self.sceneCoordinator)
             return self.userService.create(user: user).andThen(self.sceneCoordinator.sceneTransition(to: .tabBar(viewModel: tabBarViewModel), type: .root)).asObservable().map{_ in}
         }
     }

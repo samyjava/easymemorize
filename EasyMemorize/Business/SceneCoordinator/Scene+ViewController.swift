@@ -59,6 +59,12 @@ extension Scene {
             }
             viewController.bindViewModel(to: viewModel)
             return viewController
+            
+            case .lesson(let viewModel):
+            let storyboard = UIStoryboard(name: "Lesson", bundle: nil)
+            var viewController = storyboard.instantiateViewController(identifier: "Lesson") as LessonViewController
+            viewController.bindViewModel(to: viewModel)
+            return viewController
         }
     }
 }
