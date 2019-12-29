@@ -13,8 +13,8 @@ import LocalAuthentication
 
 
 struct RegisterViewModel {
-    let sceneCoordinator: SceneCoordinatorType!
-    let userService: UserServiceType!
+    let sceneCoordinator: SceneCoordinatorType
+    let userService: UserServiceType
     
     init(sceneCoordinator: SceneCoordinatorType, userService: UserServiceType) {
         self.sceneCoordinator = sceneCoordinator

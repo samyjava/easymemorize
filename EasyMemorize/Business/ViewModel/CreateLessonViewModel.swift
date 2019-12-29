@@ -17,8 +17,8 @@ struct NewLesson {
 }
 
 struct CreateLessonViewModel {
-    let sceneCoordinator: SceneCoordinatorType!
-    let lessonService: LessonServiceType!
+    let sceneCoordinator: SceneCoordinatorType
+    let lessonService: LessonServiceType
     
     init(sceneCoordinator: SceneCoordinatorType, lessonService: LessonServiceType) {
         self.sceneCoordinator = sceneCoordinator

@@ -13,6 +13,7 @@ enum BoxServiceError: Error {
     case creationFailed
     case transferFailed(CardItem)
     case resetFailed
+    case isExistingFailed
 }
 
 
@@ -25,4 +26,7 @@ protocol BoxServiceType {
     
     @discardableResult
     func transferCardTo(box no:Int, card: CardItem) -> Completable
+    
+    @discardableResult
+    func isExistCardInBoxes(card: CardItem) -> Single<Bool>
 }

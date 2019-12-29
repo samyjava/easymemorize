@@ -66,5 +66,15 @@ struct BoxService: BoxServiceType {
         return result ?? Completable.error(BoxServiceError.transferFailed(card))
     }
     
+    func isExistCardInBoxes(card: CardItem) -> Single<Bool> {
+        let result = withRealm(title: "Is exist card in boxes") { realm -> Single<Bool> in
+            if realm.objects(BoxCardItem.self).filter("cardId == \(card.id)").count > 0 {
+                return Single.just(true)
+            } else {
+                return Single.just(false)
+            }
+        }
+        return result ?? Single.error(BoxServiceError.isExistingFailed)
+    }
     
 }

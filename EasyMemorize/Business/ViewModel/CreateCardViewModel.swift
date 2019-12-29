@@ -17,8 +17,8 @@ struct NewCard {
 }
 
 struct CreateCardViewModel {
-    let sceneCoordinator: SceneCoordinatorType!
-    let cardService: CardServiceType!
+    let sceneCoordinator: SceneCoordinatorType
+    let cardService: CardServiceType
     
     init(sceneCoordinator: SceneCoordinatorType, cardService: CardServiceType) {
         self.sceneCoordinator = sceneCoordinator
