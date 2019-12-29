@@ -14,7 +14,7 @@ protocol SceneCoordinatorType {
     func sceneTransition(to scene: Scene, type: TransitionType) -> Completable
     
     @discardableResult
-    func switchTab(to tab: Tab) -> Completable
+    func switchTab(to tabIndex: Int) -> Completable
     
     @discardableResult
     func pop() -> Completable

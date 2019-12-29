@@ -52,15 +52,15 @@ class SceneCoordinator: SceneCoordinatorType {
         }
     }
     
-    func switchTab(to tab: Tab) -> Completable {
+    func switchTab(to tabIndex: Int) -> Completable {
         guard let tabBarController = self.currentViewController.tabBarController else {
             return Completable.error(SceneCoordinatorError.noTabBarController)
         }
-        guard let index = Tab.tabs.firstIndex(of: tab) else {
+        guard tabIndex >= 0, tabIndex < Tab.tabs.count else {
             return Completable.error(SceneCoordinatorError.noValidTab)
         }
-        tabBarController.selectedIndex = index
-        self.currentViewController = tabBarController.viewControllers![index]
+        tabBarController.selectedIndex = tabIndex
+        self.currentViewController = tabBarController.viewControllers![tabIndex]
         return Completable.empty()
     }
     

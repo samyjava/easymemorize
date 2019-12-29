@@ -7,7 +7,18 @@
 //
 
 import UIKit
+import Action
 
 struct TabBarViewModel {
+    let sceneCoordinator: SceneCoordinatorType
     
+    init(sceneCoordinator: SceneCoordinatorType) {
+        self.sceneCoordinator = sceneCoordinator
+    }
+    
+    func onSwitchTab() -> Action<Int,Void> {
+        return Action { index in
+            self.sceneCoordinator.switchTab(to: index).asObservable().map {_ in}
+        }
+    }
 }
