@@ -15,8 +15,6 @@ enum Tab: Equatable {
     
     static func ==(lhs: Tab, rhs: Tab) -> Bool {
         switch (lhs,rhs) {
-        case (.dashboard, .dashboard):
-            return true
         case (.lesson, .lesson):
             return true
         case (.Box, .Box):
@@ -25,8 +23,6 @@ enum Tab: Equatable {
             return false
         }
     }
-    
-    case dashboard(viewModel: DashboardViewModel)
     case lesson(viewModel: LessonViewModel)
     case Box(viewModel: BoxViewModel)
 }

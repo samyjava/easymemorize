@@ -12,12 +12,6 @@ extension Tab {
     func viewController() -> UIViewController {
         switch self {
             
-        case .dashboard(let viewModel):
-            let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-            var viewController = storyboard.instantiateViewController(identifier: "Dashboard") as DashboardViewController
-            viewController.bindViewModel(to: viewModel)
-            return viewController
-            
         case .lesson(let viewModel):
             let storyboard = UIStoryboard(name: "Lesson", bundle: nil)
             var viewController = storyboard.instantiateViewController(identifier: "Lesson") as LessonViewController
