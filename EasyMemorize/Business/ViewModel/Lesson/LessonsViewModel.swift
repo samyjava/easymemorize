@@ -43,7 +43,7 @@ struct LessonsViewModel {
     
     func edit(lesson item: LessonItem) -> CocoaAction {
         return CocoaAction {
-            let editLessonViewModel = EditLessonViewModel()
+            let editLessonViewModel = EditLessonViewModel(sceneCoordinator: self.sceneCoordinator, lessonService: self.lessonService, lesson: item)
             return self.sceneCoordinator.sceneTransition(to: .editLesson(viewModel: editLessonViewModel), type: .modal).asObservable().map{_ in}
         }
     }

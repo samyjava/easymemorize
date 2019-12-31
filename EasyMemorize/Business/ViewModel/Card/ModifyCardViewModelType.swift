@@ -8,6 +8,17 @@
 
 import Foundation
 
+struct NewCard {
+    let word: String
+    let definition: String
+    let lesson: LessonItem
+}
+
+struct EditedCard {
+    let word: String?
+    let definition: String?
+}
+
 protocol ModifyCardViewModelType {
     
 }

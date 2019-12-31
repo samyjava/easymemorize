@@ -10,10 +10,6 @@ import Foundation
 import Action
 import RxSwift
 
-struct EditedCard {
-    let word: String?
-    let definition: String?
-}
 
 struct EditCardViewModel: ModifyCardViewModelType {
     let sceneCoordinator: SceneCoordinatorType

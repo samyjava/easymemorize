@@ -10,11 +10,6 @@ import UIKit
 import RxSwift
 import Action
 
-struct NewCard {
-    let word: String
-    let definition: String
-    let lesson: LessonItem
-}
 
 struct CreateCardViewModel: ModifyCardViewModelType {
     let sceneCoordinator: SceneCoordinatorType

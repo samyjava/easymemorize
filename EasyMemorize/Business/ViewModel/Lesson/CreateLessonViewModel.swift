@@ -10,12 +10,6 @@ import UIKit
 import RxSwift
 import Action
 
-struct NewLesson {
-    let title: String
-    let image: String?
-    let language: String
-}
-
 struct CreateLessonViewModel: ModifyLessonViewModelType {
     let sceneCoordinator: SceneCoordinatorType
     let lessonService: LessonServiceType
