@@ -155,6 +155,19 @@ class BoxServiceTest: XCTestCase {
             realm.delete([card1ForTest, card2ForTest, card3ForTest, card4ForTest, card5ForTest])
         }
     }
+    
+    func testCardInBoxNo() {
+        // Given
+        _ = self.boxService.createBox(no: 1200, waitingTime: 1200).toBlocking()
+        _ = self.cardService.createCard(word: "sdgfkyadufgvkg", definition: "hdhvdfvgbhkdfvk", Lesson: self.lessonForTest).toBlocking()
+        
+        let cardForTest = self.realm.objects(CardItem.self).filter{$0.word == "sdgfkyadufgvkg"}.first!
+        // When
+        _ = self.boxService.transferCardTo(box: 1200, card: cardForTest).toBlocking()
+        let cardItems = try! self.boxService.cards(in: 1200).toBlocking().first()
+        // Then
+        XCTAssertTrue(cardItems!.contains(cardForTest))
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

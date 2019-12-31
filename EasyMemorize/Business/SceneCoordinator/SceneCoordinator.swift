@@ -86,7 +86,7 @@ class SceneCoordinator: SceneCoordinatorType {
         let lessonService = LessonService()
         // Create ViewModels
         let lessonsViewModel = LessonsViewModel(sceneCoordinator: self, lessonService: lessonService)
-        let boxViewModel = BoxViewModel()
+        let boxViewModel = BoxViewModel(sceneCoordinator: self, lessonService: lessonService)
         // Create Tabs
         let lessonTab = Tab.lessons(viewModel: lessonsViewModel)
         let boxTab = Tab.Box(viewModel: boxViewModel)

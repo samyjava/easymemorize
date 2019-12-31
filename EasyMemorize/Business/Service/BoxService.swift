@@ -11,7 +11,7 @@ import RealmSwift
 import RxSwift
 
 struct BoxService: BoxServiceType {
-    
+
     private func withRealm<T>(title: String, action: (Realm) throws -> T) -> T? {
         do {
             let realm = try Realm()
@@ -75,6 +75,24 @@ struct BoxService: BoxServiceType {
             }
         }
         return result ?? Single.error(BoxServiceError.isExistingFailed)
+    }
+    
+    func cards(in boxNo: Int) -> Observable<[CardItem]> {
+        let result = withRealm(title: "Cards in exch boxes") { realm -> Observable<[CardItem]> in
+            let cardIds = realm.objects(BoxCardItem.self).filter("boxId == \(boxNo)").toArray().map{$0.cardId}
+            let cards = realm.objects(CardItem.self).filter("id IN %@",cardIds)
+            return Observable.array(from: cards)
+        }
+        return result ?? Observable.error(BoxServiceError.getCardsFailed)
+    }
+    
+    func availableCards(in boxNo: Int) -> Observable<[CardItem]> {
+        let result = withRealm(title: "Cards in exch boxes") { realm -> Observable<[CardItem]> in
+            let cardIds = realm.objects(BoxCardItem.self).filter("boxId == \(boxNo)").toArray().filter{$0.isAvailable == true}.map{$0.cardId}
+            let cards = realm.objects(CardItem.self).filter("id IN %@",cardIds)
+            return Observable.array(from: cards)
+        }
+        return result ?? Observable.error(BoxServiceError.getCardsFailed)
     }
     
 }
