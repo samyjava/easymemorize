@@ -10,10 +10,11 @@ import UIKit
 
 class CreateLessonViewController: UIViewController, BindableType {
     
-    var viewModel: CreateLessonViewModel!
+    var viewModel: ModifyLessonViewModelType!
     func bindViewModel() {
         
     }
+    var isEditMode = false
 
     override func viewDidLoad() {
         super.viewDidLoad()

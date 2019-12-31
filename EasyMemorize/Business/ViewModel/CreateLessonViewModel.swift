@@ -16,7 +16,7 @@ struct NewLesson {
     let language: String
 }
 
-struct CreateLessonViewModel {
+struct CreateLessonViewModel: ModifyLessonViewModelType {
     let sceneCoordinator: SceneCoordinatorType
     let lessonService: LessonServiceType
     

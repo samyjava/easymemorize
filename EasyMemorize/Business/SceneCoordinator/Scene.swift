@@ -13,6 +13,7 @@ enum Scene {
     case register(viewModel: RegisterViewModel)
     case login(viewModel: LoginViewModel)
     case createLesson(viewModel: CreateLessonViewModel)
+    case editLesson(viewModel: EditLessonViewModel)
     case createCard(viewModel: CreateCardViewModel)
     case showCards(viewModel: ShowCardsViewModel)
     case showBoxCards(viewModel: ShowBoxCardsViewModel)

@@ -37,4 +37,10 @@ struct LessonsViewModel {
         return self.lessonService.fetchAllLesson()
     }
     
+    func edit(lesson item: LessonItem) -> CocoaAction {
+        return CocoaAction {
+            let editLessonViewModel = EditLessonViewModel()
+            return self.sceneCoordinator.sceneTransition(to: .editLesson(viewModel: editLessonViewModel), type: .modal).asObservable().map{_ in}
+        }
+    }
 }
