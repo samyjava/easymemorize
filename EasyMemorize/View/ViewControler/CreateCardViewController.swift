@@ -10,7 +10,9 @@ import UIKit
 
 class CreateCardViewController: UIViewController, BindableType {
     
-    var viewModel: CreateCardViewModel!
+    var isEditMode = false
+    
+    var viewModel: ModifyCardViewModelType!
     func bindViewModel() {
         
     }

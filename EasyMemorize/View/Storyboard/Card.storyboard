@@ -134,7 +134,7 @@
         <!--Create View Controller-->
         <scene sceneID="NVI-JJ-EAe">
             <objects>
-                <viewController storyboardIdentifier="CreateCard" id="Bc4-4h-Ajt" userLabel="Create View Controller" customClass="CreateCardViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateEditCard" id="Bc4-4h-Ajt" userLabel="Create View Controller" customClass="CreateCardViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F77-6w-Ybv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -15,6 +15,7 @@ enum Scene {
     case createLesson(viewModel: CreateLessonViewModel)
     case editLesson(viewModel: EditLessonViewModel)
     case createCard(viewModel: CreateCardViewModel)
+    case editCard(viewModel: EditCardViewModel)
     case showCards(viewModel: ShowCardsViewModel)
     case showBoxCards(viewModel: ShowBoxCardsViewModel)
     case tabBar(viewModel: TabBarViewModel)

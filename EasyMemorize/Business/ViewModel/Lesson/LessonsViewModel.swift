@@ -13,15 +13,19 @@ import RxSwift
 struct LessonsViewModel {
     let sceneCoordinator: SceneCoordinatorType
     let lessonService: LessonServiceType
+    let boxService: BoxServiceType
+    let cardService: CardServiceType
     
-    init(sceneCoordinator: SceneCoordinatorType, lessonService: LessonServiceType) {
+    init(sceneCoordinator: SceneCoordinatorType, lessonService: LessonServiceType, boxService: BoxServiceType, cardService: CardServiceType) {
         self.sceneCoordinator = sceneCoordinator
         self.lessonService = lessonService
+        self.boxService = boxService
+        self.cardService = cardService
     }
     
     func show(lesson item: LessonItem) -> CocoaAction {
         return CocoaAction {
-            let lessonViewModel = LessonViewModel()
+            let lessonViewModel = LessonViewModel(sceneCoordinator: self.sceneCoordinator, boxService: self.boxService, cardService: self.cardService, lesson: item)
             return self.sceneCoordinator.sceneTransition(to: .lesson(viewModel: lessonViewModel), type: .push).asObservable().map{_ in}
         }
     }

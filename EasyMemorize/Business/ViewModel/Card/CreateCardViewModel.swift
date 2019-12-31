@@ -16,7 +16,7 @@ struct NewCard {
     let lesson: LessonItem
 }
 
-struct CreateCardViewModel {
+struct CreateCardViewModel: ModifyCardViewModelType {
     let sceneCoordinator: SceneCoordinatorType
     let cardService: CardServiceType
     

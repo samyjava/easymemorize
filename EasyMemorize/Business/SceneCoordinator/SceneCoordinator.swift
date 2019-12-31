@@ -17,6 +17,7 @@ enum SceneCoordinatorError: String, Error {
 }
 
 class SceneCoordinator: SceneCoordinatorType {
+    
     private var window: UIWindow!
     private var currentViewController: UIViewController!
     private var pushDepth = 0
@@ -82,11 +83,10 @@ class SceneCoordinator: SceneCoordinatorType {
         }
     }
     
-    func createTabBar() -> Completable {
-        let lessonService = LessonService()
+    func createTabBar(lessonService: LessonServiceType, boxService: BoxServiceType, cardService: CardServiceType) -> Completable {
         // Create ViewModels
-        let lessonsViewModel = LessonsViewModel(sceneCoordinator: self, lessonService: lessonService)
-        let boxViewModel = BoxViewModel(sceneCoordinator: self, lessonService: lessonService)
+        let lessonsViewModel = LessonsViewModel(sceneCoordinator: self, lessonService: lessonService, boxService: boxService, cardService: cardService)
+        let boxViewModel = BoxViewModel(sceneCoordinator: self, boxService: boxService)
         // Create Tabs
         let lessonTab = Tab.lessons(viewModel: lessonsViewModel)
         let boxTab = Tab.Box(viewModel: boxViewModel)
