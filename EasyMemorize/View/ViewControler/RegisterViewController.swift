@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import AVFoundation
 
 class RegisterViewController: UIViewController, BindableType {
     
@@ -19,7 +22,6 @@ class RegisterViewController: UIViewController, BindableType {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
 }
 

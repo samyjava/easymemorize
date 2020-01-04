@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 import Action
+import AVFoundation
 
 enum ShowCardsViewModelError: Error {
     case cardIsExistInBox
@@ -18,11 +19,13 @@ struct ShowCardsViewModel {
     let sceneCoordinator: SceneCoordinatorType
     let cards: [CardItem]
     let boxService: BoxServiceType
+    let textToSpeechService: TextToSpeechServiceType
     
-    init(sceneCoordinator: SceneCoordinatorType, cards: [CardItem], boxService: BoxServiceType) {
+    init(sceneCoordinator: SceneCoordinatorType, cards: [CardItem], boxService: BoxServiceType, textToSpeechService: TextToSpeechServiceType) {
         self.sceneCoordinator = sceneCoordinator
         self.cards = cards
         self.boxService = boxService
+        self.textToSpeechService = textToSpeechService
     }
     
     func sendToLeithnerBox() -> Action<CardItem,Void> {
@@ -36,4 +39,9 @@ struct ShowCardsViewModel {
             }.asObservable().map{_ in}
         }
     }
+    
+    func textToSpeech() -> Action<TextToSpeechRequest,AVAudioPlayer?> {
+        return self.textToSpeechService.textToSpeech()
+    }
+    
 }

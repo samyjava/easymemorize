@@ -9,6 +9,7 @@
 import UIKit
 
 class ShowCardsViewController: UIViewController, BindableType {
+    @IBOutlet public weak var showCardView: UIView!
     
     var viewModel: ShowCardsViewModel!
     func bindViewModel() {

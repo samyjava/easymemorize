@@ -12,6 +12,8 @@
 		F21F248F238BD0D300CFCFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21F248E238BD0D300CFCFBF /* Main.storyboard */; };
 		F22AC5ED238D08CA00DECCB1 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */; };
 		F2487DEA23BCBEC900130176 /* TextToSpeechServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2487DE923BCBEC900130176 /* TextToSpeechServiceType.swift */; };
+		F2487DEC23BCC0E600130176 /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2487DEB23BCC0E600130176 /* TextToSpeechService.swift */; };
+		F2487DEE23BCDBC100130176 /* TextToSpeechServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2487DED23BCDBC100130176 /* TextToSpeechServiceTest.swift */; };
 		F24C2F9923B9D4CC00C35FCE /* EditLessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C2F9823B9D4CC00C35FCE /* EditLessonViewModel.swift */; };
 		F24C2F9B23B9D60D00C35FCE /* ModifyLessonViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C2F9A23B9D60D00C35FCE /* ModifyLessonViewModelType.swift */; };
 		F24C2FA023BB7A2C00C35FCE /* EditCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24C2F9F23BB7A2C00C35FCE /* EditCardViewModel.swift */; };
@@ -24,6 +26,7 @@
 		F26A304A239F7DCE00960192 /* BoxServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A3049239F7DCE00960192 /* BoxServiceType.swift */; };
 		F26A304C239F873000960192 /* BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A304B239F873000960192 /* BoxService.swift */; };
 		F26A304E239FB59700960192 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26A304D239FB59700960192 /* SceneCoordinatorType.swift */; };
+		F26FD38923C08C85002C92EA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26FD38823C08C85002C92EA /* CardViewController.swift */; };
 		F27F74A323B1EF5700789AF4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74A223B1EF5700789AF4 /* LoginViewModel.swift */; };
 		F27F74A923B1F04D00789AF4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74A823B1F04D00789AF4 /* LoginViewController.swift */; };
 		F27F74AB23B1F2B200789AF4 /* CreateLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F74AA23B1F2B200789AF4 /* CreateLessonViewController.swift */; };
@@ -98,6 +101,8 @@
 		F21F248E238BD0D300CFCFBF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
 		F2487DE923BCBEC900130176 /* TextToSpeechServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechServiceType.swift; sourceTree = "<group>"; };
+		F2487DEB23BCC0E600130176 /* TextToSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechService.swift; sourceTree = "<group>"; };
+		F2487DED23BCDBC100130176 /* TextToSpeechServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechServiceTest.swift; sourceTree = "<group>"; };
 		F24C2F9823B9D4CC00C35FCE /* EditLessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLessonViewModel.swift; sourceTree = "<group>"; };
 		F24C2F9A23B9D60D00C35FCE /* ModifyLessonViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyLessonViewModelType.swift; sourceTree = "<group>"; };
 		F24C2F9F23BB7A2C00C35FCE /* EditCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardViewModel.swift; sourceTree = "<group>"; };
@@ -110,6 +115,7 @@
 		F26A3049239F7DCE00960192 /* BoxServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxServiceType.swift; sourceTree = "<group>"; };
 		F26A304B239F873000960192 /* BoxService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxService.swift; sourceTree = "<group>"; };
 		F26A304D239FB59700960192 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
+		F26FD38823C08C85002C92EA /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		F27F74A223B1EF5700789AF4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F27F74A823B1F04D00789AF4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F27F74AA23B1F2B200789AF4 /* CreateLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLessonViewController.swift; sourceTree = "<group>"; };
@@ -240,6 +246,7 @@
 				F27F74CC23B23DA700789AF4 /* LessonViewController.swift */,
 				F27F74D023B23EBC00789AF4 /* BoxViewController.swift */,
 				F2615B2E23B8EFDC00F58DF5 /* LessonsViewController.swift */,
+				F26FD38823C08C85002C92EA /* CardViewController.swift */,
 			);
 			path = ViewControler;
 			sourceTree = "<group>";
@@ -278,6 +285,7 @@
 				F268FF9123B3456200463973 /* UserServiceType.swift */,
 				F268FF9323B3502D00463973 /* UserService.swift */,
 				F2487DE923BCBEC900130176 /* TextToSpeechServiceType.swift */,
+				F2487DEB23BCC0E600130176 /* TextToSpeechService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -361,6 +369,7 @@
 				F296AC77238BB55700E8E5ED /* LessonServiceTest.swift */,
 				F29B8B4B23AE0E09009C1BD0 /* CardServiceTest.swift */,
 				F2ACB9D623AF65E300E1D2A7 /* BoxServiceTest.swift */,
+				F2487DED23BCDBC100130176 /* TextToSpeechServiceTest.swift */,
 			);
 			path = ServicesTest;
 			sourceTree = "<group>";
@@ -687,6 +696,8 @@
 				F27F74D123B23EBC00789AF4 /* BoxViewController.swift in Sources */,
 				F27F74B523B1F58700789AF4 /* ShowCardsViewController.swift in Sources */,
 				F2964B8D239D347200F4D223 /* CardItem.swift in Sources */,
+				F26FD38923C08C85002C92EA /* CardViewController.swift in Sources */,
+				F2487DEC23BCC0E600130176 /* TextToSpeechService.swift in Sources */,
 				F2FD2BA923B0AF960004F695 /* Tab.swift in Sources */,
 				F26A304E239FB59700960192 /* SceneCoordinatorType.swift in Sources */,
 				F2964B87239D296600F4D223 /* LanguageItem.swift in Sources */,
@@ -709,6 +720,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2ACB9D723AF65E300E1D2A7 /* BoxServiceTest.swift in Sources */,
+				F2487DEE23BCDBC100130176 /* TextToSpeechServiceTest.swift in Sources */,
 				F296AC78238BB55700E8E5ED /* LessonServiceTest.swift in Sources */,
 				F29B8B4C23AE0E09009C1BD0 /* CardServiceTest.swift in Sources */,
 			);

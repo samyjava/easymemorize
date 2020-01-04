@@ -7,9 +7,15 @@
 //
 
 import Foundation
-import RxSwift
+import Action
+import AVFoundation
+
+enum TextToSpeechServiceTypeError: Error {
+    case urlError
+    case playAudioError
+}
 
 protocol TextToSpeechServiceType {
     @discardableResult
-    func textToSpeech() -> Completable
+    func textToSpeech() -> Action<TextToSpeechRequest,AVAudioPlayer?>
 }

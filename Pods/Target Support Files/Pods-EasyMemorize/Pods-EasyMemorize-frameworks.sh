@@ -166,14 +166,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Differentiator-iOS13.0/Differentiator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm-iOS13.0/Realm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RealmSwift-iOS13.0/RealmSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxBlocking-iOS13.0/RxBlocking.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-iOS13.0/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxDataSources-iOS13.0/RxDataSources.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxGesture-iOS13.0/RxGesture.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxRealm-iOS13.0/RxRealm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxRelay-iOS13.0/RxRelay.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-iOS13.0/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxTest-iOS13.0/RxTest.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Action-iOS13.0/Action.framework"
@@ -181,14 +179,12 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Differentiator-iOS13.0/Differentiator.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Realm-iOS13.0/Realm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RealmSwift-iOS13.0/RealmSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxBlocking-iOS13.0/RxBlocking.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-iOS13.0/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxDataSources-iOS13.0/RxDataSources.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxGesture-iOS13.0/RxGesture.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxRealm-iOS13.0/RxRealm.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxRelay-iOS13.0/RxRelay.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-iOS13.0/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxTest-iOS13.0/RxTest.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

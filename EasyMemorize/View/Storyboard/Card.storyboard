@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,6 +11,10 @@
         <scene sceneID="afD-bg-5hp">
             <objects>
                 <viewController storyboardIdentifier="ShowCards" id="DZT-dt-ePG" customClass="ShowCardsViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="URP-S5-wNj"/>
+                        <viewControllerLayoutGuide type="bottom" id="cBn-nY-8aI"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GCk-Qi-U2K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,91 +53,115 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="M0Y-6d-cI6" firstAttribute="trailing" secondItem="Ujj-34-VrS" secondAttribute="trailing" id="31C-DA-mFy"/>
-                            <constraint firstItem="Ujj-34-VrS" firstAttribute="leading" secondItem="M0Y-6d-cI6" secondAttribute="leading" id="BCg-7c-GkG"/>
-                            <constraint firstItem="M0Y-6d-cI6" firstAttribute="bottom" secondItem="Ujj-34-VrS" secondAttribute="bottom" id="EdY-xY-cwO"/>
-                            <constraint firstItem="Ujj-34-VrS" firstAttribute="top" secondItem="M0Y-6d-cI6" secondAttribute="top" id="Ekl-zs-vGA"/>
+                            <constraint firstAttribute="trailing" secondItem="Ujj-34-VrS" secondAttribute="trailing" id="31C-DA-mFy"/>
+                            <constraint firstItem="Ujj-34-VrS" firstAttribute="leading" secondItem="GCk-Qi-U2K" secondAttribute="leading" id="BCg-7c-GkG"/>
+                            <constraint firstItem="cBn-nY-8aI" firstAttribute="top" secondItem="Ujj-34-VrS" secondAttribute="bottom" id="EdY-xY-cwO"/>
+                            <constraint firstItem="Ujj-34-VrS" firstAttribute="top" secondItem="URP-S5-wNj" secondAttribute="bottom" id="Ekl-zs-vGA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="M0Y-6d-cI6"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hf-ww-3Du" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="160.86956521739131" y="124.55357142857142"/>
+            <point key="canvasLocation" x="-1028" y="-676"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="2l4-6f-pls">
+        <!--Card View Controller-->
+        <scene sceneID="hBR-aR-Zod">
             <objects>
-                <viewController id="vee-K8-Xk9" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zq4-gY-Yz5" userLabel="FrontView">
+                <viewController storyboardIdentifier="Card" id="RqZ-RO-wMx" customClass="CardViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jzP-kz-Sok"/>
+                        <viewControllerLayoutGuide type="bottom" id="mnC-CJ-MTM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cKa-gM-lCP">
                         <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ITR-8Z-rpH">
-                                <rect key="frame" x="172" y="142.5" width="156" height="225.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zq4-gY-Yz5" userLabel="FrontView">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u3h-Xn-dcA">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="187.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oj5-UJ-uef">
-                                        <rect key="frame" x="8.5" y="195.5" width="139" height="30"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ITR-8Z-rpH">
+                                        <rect key="frame" x="172" y="116.5" width="156" height="267"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-audio-wave-30" translatesAutoresizingMaskIntoConstraints="NO" id="saw-rJ-neC">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMD-LD-iUV">
-                                                <rect key="frame" x="38" y="0.0" width="101" height="30"/>
-                                                <state key="normal" title="Text to speech"/>
-                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u3h-Xn-dcA">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="229"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oj5-UJ-uef">
+                                                <rect key="frame" x="8.5" y="237" width="139" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-audio-wave-30" translatesAutoresizingMaskIntoConstraints="NO" id="saw-rJ-neC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMD-LD-iUV">
+                                                        <rect key="frame" x="38" y="0.0" width="101" height="30"/>
+                                                        <state key="normal" title="Text to speech"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                            </stackView>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ITR-8Z-rpH" firstAttribute="width" secondItem="zq4-gY-Yz5" secondAttribute="width" multiplier="0.312" id="K1b-WL-mcL"/>
+                                    <constraint firstItem="ITR-8Z-rpH" firstAttribute="centerY" secondItem="zq4-gY-Yz5" secondAttribute="centerY" id="LIb-LW-Xcd"/>
+                                    <constraint firstItem="ITR-8Z-rpH" firstAttribute="centerX" secondItem="zq4-gY-Yz5" secondAttribute="centerX" id="bRv-Y9-hZx"/>
+                                    <constraint firstItem="ITR-8Z-rpH" firstAttribute="height" secondItem="zq4-gY-Yz5" secondAttribute="height" multiplier="0.53436" id="gSM-eQ-RLg"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esa-xk-Ptk" userLabel="BackView">
+                                <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="INv-Mb-41U">
+                                        <rect key="frame" x="0.0" y="-46" width="500" height="592"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="INv-Mb-41U" firstAttribute="width" secondItem="Esa-xk-Ptk" secondAttribute="width" id="4oM-02-B0p"/>
+                                    <constraint firstItem="INv-Mb-41U" firstAttribute="height" secondItem="Esa-xk-Ptk" secondAttribute="height" multiplier="1.18483" id="4pA-6S-ZKg"/>
+                                    <constraint firstItem="INv-Mb-41U" firstAttribute="centerY" secondItem="Esa-xk-Ptk" secondAttribute="centerY" id="kdj-VP-eJz"/>
+                                    <constraint firstItem="INv-Mb-41U" firstAttribute="centerX" secondItem="Esa-xk-Ptk" secondAttribute="centerX" id="ukx-La-uao"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ITR-8Z-rpH" firstAttribute="width" secondItem="spE-Y7-0VA" secondAttribute="width" multiplier="0.312" id="K1b-WL-mcL"/>
-                            <constraint firstItem="ITR-8Z-rpH" firstAttribute="centerY" secondItem="spE-Y7-0VA" secondAttribute="centerY" id="LIb-LW-Xcd"/>
-                            <constraint firstItem="ITR-8Z-rpH" firstAttribute="centerX" secondItem="spE-Y7-0VA" secondAttribute="centerX" id="bRv-Y9-hZx"/>
-                            <constraint firstItem="ITR-8Z-rpH" firstAttribute="height" secondItem="spE-Y7-0VA" secondAttribute="height" multiplier="0.53436" id="gSM-eQ-RLg"/>
+                            <constraint firstItem="Esa-xk-Ptk" firstAttribute="centerX" secondItem="cKa-gM-lCP" secondAttribute="centerX" id="0V0-FB-Gc3"/>
+                            <constraint firstItem="zq4-gY-Yz5" firstAttribute="height" secondItem="cKa-gM-lCP" secondAttribute="height" id="1Y7-1R-5yA"/>
+                            <constraint firstItem="zq4-gY-Yz5" firstAttribute="centerY" secondItem="cKa-gM-lCP" secondAttribute="centerY" id="RCL-32-zaQ"/>
+                            <constraint firstItem="Esa-xk-Ptk" firstAttribute="width" secondItem="cKa-gM-lCP" secondAttribute="width" id="Vwy-Xt-hI5"/>
+                            <constraint firstItem="zq4-gY-Yz5" firstAttribute="centerX" secondItem="cKa-gM-lCP" secondAttribute="centerX" id="loU-U8-IqG"/>
+                            <constraint firstItem="zq4-gY-Yz5" firstAttribute="width" secondItem="cKa-gM-lCP" secondAttribute="width" id="tLu-Tv-mnM"/>
+                            <constraint firstItem="Esa-xk-Ptk" firstAttribute="centerY" secondItem="cKa-gM-lCP" secondAttribute="centerY" id="xDA-hS-9I7"/>
+                            <constraint firstItem="Esa-xk-Ptk" firstAttribute="height" secondItem="cKa-gM-lCP" secondAttribute="height" id="yi6-86-LX6"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="spE-Y7-0VA"/>
                     </view>
                     <size key="freeformSize" width="500" height="500"/>
+                    <connections>
+                        <outlet property="frontText" destination="u3h-Xn-dcA" id="hbc-VI-Prr"/>
+                        <outlet property="textToSpeech" destination="oj5-UJ-uef" id="M2j-bN-OtK"/>
+                    </connections>
                 </viewController>
-                <view contentMode="scaleToFill" id="Esa-xk-Ptk" userLabel="BackView">
-                    <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <subviews>
-                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="INv-Mb-41U">
-                            <rect key="frame" x="0.0" y="5" width="500" height="500"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                        </textView>
-                    </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <constraints>
-                        <constraint firstItem="INv-Mb-41U" firstAttribute="width" secondItem="xKa-eV-2K1" secondAttribute="width" id="4oM-02-B0p"/>
-                        <constraint firstItem="INv-Mb-41U" firstAttribute="height" secondItem="xKa-eV-2K1" secondAttribute="height" multiplier="1.18483" id="4pA-6S-ZKg"/>
-                        <constraint firstItem="INv-Mb-41U" firstAttribute="centerY" secondItem="xKa-eV-2K1" secondAttribute="centerY" id="kdj-VP-eJz"/>
-                        <constraint firstItem="INv-Mb-41U" firstAttribute="centerX" secondItem="xKa-eV-2K1" secondAttribute="centerX" id="ukx-La-uao"/>
-                    </constraints>
-                    <viewLayoutGuide key="safeArea" id="xKa-eV-2K1"/>
-                </view>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G4b-rl-XL5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1XW-Zz-VsU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872" y="-8"/>
+            <point key="canvasLocation" x="-186" y="-850"/>
         </scene>
         <!--Create View Controller-->
         <scene sceneID="NVI-JJ-EAe">
             <objects>
                 <viewController storyboardIdentifier="CreateEditCard" id="Bc4-4h-Ajt" userLabel="Create View Controller" customClass="CreateCardViewController" customModule="EasyMemorize" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WwJ-IN-6hU"/>
+                        <viewControllerLayoutGuide type="bottom" id="FrY-D4-Lkv"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="F77-6w-Ybv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,7 +176,7 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nlf-pX-SuH">
-                                <rect key="frame" x="10.5" y="58" width="393" height="528"/>
+                                <rect key="frame" x="10.5" y="15" width="393" height="570"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HkZ-ml-1eE">
                                         <rect key="frame" x="9.5" y="0.0" width="374" height="374"/>
@@ -159,15 +186,15 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RcR-oG-NJ8">
-                                        <rect key="frame" x="171.5" y="404" width="50" height="124"/>
+                                        <rect key="frame" x="171.5" y="404" width="50" height="166"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlF-NW-8gh">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="74"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="116"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                 <state key="normal" title="Flip"/>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-3d-rotate-50" translatesAutoresizingMaskIntoConstraints="NO" id="Yhl-RZ-jJn">
-                                                <rect key="frame" x="0.0" y="74" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="116" width="50" height="50"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -177,20 +204,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="iMH-7x-ElC" secondAttribute="trailing" id="1Ks-KB-X3P"/>
-                            <constraint firstItem="nlf-pX-SuH" firstAttribute="centerY" secondItem="ObY-Ij-w0s" secondAttribute="centerY" id="Dlx-HU-mqF"/>
-                            <constraint firstItem="nlf-pX-SuH" firstAttribute="height" secondItem="ObY-Ij-w0s" secondAttribute="height" multiplier="0.95" id="Wdu-Ok-aDu"/>
+                            <constraint firstItem="nlf-pX-SuH" firstAttribute="centerY" secondItem="F77-6w-Ybv" secondAttribute="centerY" id="Dlx-HU-mqF"/>
+                            <constraint firstItem="nlf-pX-SuH" firstAttribute="height" secondItem="F77-6w-Ybv" secondAttribute="height" multiplier="0.95" id="Wdu-Ok-aDu"/>
                             <constraint firstItem="iMH-7x-ElC" firstAttribute="top" secondItem="F77-6w-Ybv" secondAttribute="top" id="jVv-qZ-MOE"/>
-                            <constraint firstItem="nlf-pX-SuH" firstAttribute="centerX" secondItem="ObY-Ij-w0s" secondAttribute="centerX" id="nvr-7l-mB0"/>
-                            <constraint firstItem="nlf-pX-SuH" firstAttribute="width" secondItem="ObY-Ij-w0s" secondAttribute="width" multiplier="0.95" id="s06-Dg-Dqi"/>
+                            <constraint firstItem="nlf-pX-SuH" firstAttribute="centerX" secondItem="F77-6w-Ybv" secondAttribute="centerX" id="nvr-7l-mB0"/>
+                            <constraint firstItem="nlf-pX-SuH" firstAttribute="width" secondItem="F77-6w-Ybv" secondAttribute="width" multiplier="0.95" id="s06-Dg-Dqi"/>
                             <constraint firstItem="iMH-7x-ElC" firstAttribute="leading" secondItem="F77-6w-Ybv" secondAttribute="leading" id="yXL-73-9PQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="ObY-Ij-w0s"/>
                     </view>
                     <size key="freeformSize" width="414" height="600"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LOp-fX-7Tc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1726.0869565217392" y="-92.410714285714278"/>
+            <point key="canvasLocation" x="588" y="-745"/>
         </scene>
     </scenes>
     <resources>

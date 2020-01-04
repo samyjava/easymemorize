@@ -31,7 +31,8 @@ struct LessonViewModel {
     
     func play() -> CocoaAction {
         return CocoaAction {
-            let showCardsViewModel = ShowCardsViewModel(sceneCoordinator: self.sceneCoordinator, cards: self.lesson.cards.toArray(), boxService: self.boxService)
+            let textToSpeechService = TextToSpeechService()
+            let showCardsViewModel = ShowCardsViewModel(sceneCoordinator: self.sceneCoordinator, cards: self.lesson.cards.toArray(), boxService: self.boxService, textToSpeechService: textToSpeechService)
             return self.sceneCoordinator.sceneTransition(to: .showCards(viewModel: showCardsViewModel), type: .push).asObservable().map{_ in}
         }
     }
