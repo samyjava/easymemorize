@@ -17,6 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Create-lesson" translatesAutoresizingMaskIntoConstraints="NO" id="TEb-Cg-tTd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6qf-Tc-IQB">
                                 <rect key="frame" x="41.5" y="72" width="331" height="500"/>
                                 <subviews>
@@ -59,12 +62,12 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vy1-XY-OoW">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="qLA-9e-8dT">
+                                    <navigationItem title="Create Lesson" id="qLA-9e-8dT">
                                         <barButtonItem key="rightBarButtonItem" style="plain" id="XIQ-fG-SkW">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Nh4-wn-Z8V">
                                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Create"/>
+                                                <state key="normal" title="Save"/>
                                             </button>
                                         </barButtonItem>
                                     </navigationItem>
@@ -73,8 +76,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="pln-MP-w0K" firstAttribute="bottom" secondItem="TEb-Cg-tTd" secondAttribute="bottom" id="0X9-0N-yPb"/>
                             <constraint firstItem="6qf-Tc-IQB" firstAttribute="centerY" secondItem="pln-MP-w0K" secondAttribute="centerY" id="ASg-Jx-5Nq"/>
+                            <constraint firstItem="pln-MP-w0K" firstAttribute="trailing" secondItem="TEb-Cg-tTd" secondAttribute="trailing" id="F4T-6v-yxw"/>
+                            <constraint firstItem="TEb-Cg-tTd" firstAttribute="leading" secondItem="pln-MP-w0K" secondAttribute="leading" id="IG4-Z8-q4g"/>
                             <constraint firstItem="vy1-XY-OoW" firstAttribute="top" secondItem="v0A-x4-GKn" secondAttribute="top" id="Ivv-HG-h5A"/>
+                            <constraint firstItem="TEb-Cg-tTd" firstAttribute="top" secondItem="v0A-x4-GKn" secondAttribute="top" id="SLm-Wg-Uub"/>
                             <constraint firstItem="6qf-Tc-IQB" firstAttribute="height" secondItem="pln-MP-w0K" secondAttribute="height" multiplier="0.9" id="dK5-Qc-rmo"/>
                             <constraint firstItem="6qf-Tc-IQB" firstAttribute="width" secondItem="pln-MP-w0K" secondAttribute="width" multiplier="0.8" id="eul-ib-hbh"/>
                             <constraint firstAttribute="trailing" secondItem="vy1-XY-OoW" secondAttribute="trailing" id="glv-DO-Te2"/>
@@ -337,6 +344,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Create-lesson" width="500" height="689"/>
         <image name="play.fill" catalog="system" width="58" height="64"/>
     </resources>
 </document>

@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShowBox-background" translatesAutoresizingMaskIntoConstraints="NO" id="iYk-3X-qrn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Dl4-Cf-YS1">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
@@ -79,7 +82,11 @@
                         <constraints>
                             <constraint firstItem="hqd-yx-smQ" firstAttribute="bottom" secondItem="Dl4-Cf-YS1" secondAttribute="bottom" id="06z-5n-nj2"/>
                             <constraint firstItem="hqd-yx-smQ" firstAttribute="trailing" secondItem="Dl4-Cf-YS1" secondAttribute="trailing" id="A9W-wy-K6N"/>
+                            <constraint firstItem="iYk-3X-qrn" firstAttribute="top" secondItem="hqd-yx-smQ" secondAttribute="top" id="Qvh-9g-zYl"/>
+                            <constraint firstItem="hqd-yx-smQ" firstAttribute="bottom" secondItem="iYk-3X-qrn" secondAttribute="bottom" id="RgB-e4-2Qe"/>
                             <constraint firstItem="Dl4-Cf-YS1" firstAttribute="leading" secondItem="hqd-yx-smQ" secondAttribute="leading" id="g8S-k9-Q2k"/>
+                            <constraint firstItem="iYk-3X-qrn" firstAttribute="leading" secondItem="hqd-yx-smQ" secondAttribute="leading" id="kjN-Ou-MS7"/>
+                            <constraint firstItem="hqd-yx-smQ" firstAttribute="trailing" secondItem="iYk-3X-qrn" secondAttribute="trailing" id="n7b-eU-FsN"/>
                             <constraint firstItem="Dl4-Cf-YS1" firstAttribute="top" secondItem="hqd-yx-smQ" secondAttribute="top" id="yCy-mO-HBf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hqd-yx-smQ"/>
@@ -113,137 +120,430 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="doI-0p-Tqq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box.background" translatesAutoresizingMaskIntoConstraints="NO" id="evT-S0-U6o">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xMh-0s-MEM">
+                                <rect key="frame" x="16.5" y="119" width="381" height="712"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bjs-we-qqG">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="191.5"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jhv-OV-hNb" customClass="RoundedUIView" customModule="EasyMemorize" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="381" height="136"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dashboard-report4" translatesAutoresizingMaskIntoConstraints="NO" id="pfE-Bx-pkB">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
-                                            </imageView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iQ4-hw-CPQ">
-                                                <rect key="frame" x="137.5" y="144" width="139" height="47.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Oaz-dP-nRS">
+                                                <rect key="frame" x="9.5" y="0.0" width="362" height="136"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="9fY-zT-h7B">
-                                                        <rect key="frame" x="0.0" y="0.0" width="139" height="47.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fsR-0I-osh">
+                                                        <rect key="frame" x="0.0" y="26" width="167.5" height="84"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lessons:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzf-CL-3JG">
-                                                                <rect key="frame" x="0.0" y="0.0" width="73" height="47.5"/>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU0-JV-lqX">
+                                                                <rect key="frame" x="47.5" y="0.0" width="72" height="32"/>
+                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="25"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niJ-mV-heU">
-                                                                <rect key="frame" x="121" y="0.0" width="18" height="47.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7zS-au-rQh">
+                                                                <rect key="frame" x="16.5" y="40" width="134" height="44"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3wQ-H0-ndY">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="44"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7r0-Wc-c0y">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="42" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2D-CK-7ky">
+                                                                                <rect key="frame" x="0.0" y="26" width="103.5" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="uzN-qx-3GT">
+                                                                        <rect key="frame" x="111.5" y="0.0" width="22.5" height="44"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoY-06-oYC">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="22.5" height="20.5"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="13"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEG-9V-VRs">
+                                                                                <rect key="frame" x="0.0" y="27.5" width="22.5" height="16.5"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="13"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box5-flower" translatesAutoresizingMaskIntoConstraints="NO" id="9Su-hd-2Mx">
+                                                        <rect key="frame" x="167.5" y="0.0" width="74" height="136"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards make available to review after 16 days in this box." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2g-gd-AEG">
+                                                        <rect key="frame" x="241.5" y="27.5" width="120.5" height="81"/>
+                                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="iQ4-hw-CPQ" firstAttribute="height" secondItem="pfE-Bx-pkB" secondAttribute="height" multiplier="0.33" id="c1R-Bv-T5x"/>
+                                            <constraint firstItem="Oaz-dP-nRS" firstAttribute="centerY" secondItem="jhv-OV-hNb" secondAttribute="centerY" id="5ge-lW-oA1"/>
+                                            <constraint firstItem="Oaz-dP-nRS" firstAttribute="height" secondItem="jhv-OV-hNb" secondAttribute="height" id="Nga-V0-3da"/>
+                                            <constraint firstItem="Oaz-dP-nRS" firstAttribute="centerX" secondItem="jhv-OV-hNb" secondAttribute="centerX" id="TRA-eH-VxX"/>
+                                            <constraint firstItem="Oaz-dP-nRS" firstAttribute="width" secondItem="jhv-OV-hNb" secondAttribute="width" multiplier="0.95" id="WI6-KS-kOf"/>
                                         </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lDF-tZ-R08">
-                                        <rect key="frame" x="20" y="199.5" width="374" height="574.5"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpg-hW-UHY" customClass="RoundedUIView" customModule="EasyMemorize" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="144" width="381" height="136"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8Dp-Y8-LhH">
-                                                <rect key="frame" x="0.0" y="0.0" width="184" height="574.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NgD-aG-UJv">
+                                                <rect key="frame" x="0.0" y="0.0" width="381" height="136"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3jj-KM-Yle" userLabel="Box1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="184" height="377.5"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yj7-Y1-T5B">
+                                                        <rect key="frame" x="0.0" y="26.5" width="180" height="83"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Box 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApK-cn-HkV">
-                                                                <rect key="frame" x="71" y="21" width="41" height="21"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTR-3E-xdK">
+                                                                <rect key="frame" x="54" y="0.0" width="72" height="32"/>
+                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="25"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="M5f-AI-qma">
+                                                                <rect key="frame" x="23" y="40" width="134" height="43"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="B5u-9e-jzP">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="43"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWn-2y-zGF">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="42" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEk-fb-bHp">
+                                                                                <rect key="frame" x="0.0" y="25" width="103.5" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="yPR-0G-Jr3">
+                                                                        <rect key="frame" x="111.5" y="0.0" width="22.5" height="43"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rR6-wj-R0h">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="22.5" height="19.5"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="13"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQL-cC-rvR">
+                                                                                <rect key="frame" x="0.0" y="26.5" width="22.5" height="16.5"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="13"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkC-cI-qGA" userLabel="Box2">
-                                                        <rect key="frame" x="0.0" y="385.5" width="184" height="189"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Box 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdc-1p-R7D">
-                                                                <rect key="frame" x="71" y="20" width="43" height="21"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </view>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="wkC-cI-qGA" firstAttribute="height" secondItem="3jj-KM-Yle" secondAttribute="height" multiplier="0.5" id="lkR-iI-80M"/>
-                                                </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="QWG-I3-cTy">
-                                                <rect key="frame" x="192" y="0.0" width="182" height="574.5"/>
-                                                <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9a-5N-zlg" userLabel="Box3">
-                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="185.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Box 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIi-Ok-kWe">
-                                                                <rect key="frame" x="70" y="18" width="44" height="21"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOq-DU-WWO" userLabel="Box4">
-                                                        <rect key="frame" x="0.0" y="194.5" width="182" height="185.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Box 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxs-JZ-Y12">
-                                                                <rect key="frame" x="70" y="18" width="44" height="21"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kv-Ti-axa" userLabel="Box5">
-                                                        <rect key="frame" x="0.0" y="389" width="182" height="185.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Box 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWx-b2-k67">
-                                                                <rect key="frame" x="70" y="16" width="44" height="21"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </view>
+                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box4-flower" translatesAutoresizingMaskIntoConstraints="NO" id="aid-DE-O3F">
+                                                        <rect key="frame" x="180" y="0.0" width="74" height="136"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards make available to review after 8 days in this box." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mep-Ll-8io">
+                                                        <rect key="frame" x="254" y="27.5" width="127" height="81"/>
+                                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                    </stackView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="NgD-aG-UJv" firstAttribute="height" secondItem="gpg-hW-UHY" secondAttribute="height" id="SBa-Za-YGJ"/>
+                                            <constraint firstItem="NgD-aG-UJv" firstAttribute="centerY" secondItem="gpg-hW-UHY" secondAttribute="centerY" id="ciF-eM-5GT"/>
+                                            <constraint firstItem="NgD-aG-UJv" firstAttribute="centerX" secondItem="gpg-hW-UHY" secondAttribute="centerX" id="cpg-wW-yub"/>
+                                            <constraint firstItem="NgD-aG-UJv" firstAttribute="width" secondItem="gpg-hW-UHY" secondAttribute="width" id="vg9-qR-3e4"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yl8-Hn-cvG" customClass="RoundedUIView" customModule="EasyMemorize" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="288" width="381" height="136"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZWm-aJ-EKv">
+                                                <rect key="frame" x="0.0" y="0.0" width="381" height="136"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nqt-eU-oxa">
+                                                        <rect key="frame" x="0.0" y="26.5" width="180" height="83"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BT-2T-cei">
+                                                                <rect key="frame" x="54" y="0.0" width="72" height="32"/>
+                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="25"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mUC-rU-IGT">
+                                                                <rect key="frame" x="23" y="40" width="134" height="43"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="8w9-Cx-cXK">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="43"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeY-w8-zoy">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="42" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVL-4i-pSU">
+                                                                                <rect key="frame" x="0.0" y="25" width="103.5" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="wUN-Fw-CF6">
+                                                                        <rect key="frame" x="111.5" y="0.0" width="22.5" height="43"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLk-BY-kxo">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="22.5" height="19.5"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="13"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXp-r5-bko">
+                                                                                <rect key="frame" x="0.0" y="26.5" width="22.5" height="16.5"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="13"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box3-flower" translatesAutoresizingMaskIntoConstraints="NO" id="KZU-H0-lMs">
+                                                        <rect key="frame" x="180" y="0.0" width="74" height="136"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards make available to review after 4 days in this box." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7q-8w-toz">
+                                                        <rect key="frame" x="254" y="27.5" width="127" height="81"/>
+                                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ZWm-aJ-EKv" firstAttribute="centerY" secondItem="Yl8-Hn-cvG" secondAttribute="centerY" id="4nq-KH-uwY"/>
+                                            <constraint firstItem="ZWm-aJ-EKv" firstAttribute="width" secondItem="Yl8-Hn-cvG" secondAttribute="width" id="iHg-vV-VY6"/>
+                                            <constraint firstItem="ZWm-aJ-EKv" firstAttribute="centerX" secondItem="Yl8-Hn-cvG" secondAttribute="centerX" id="smf-Dk-p4Z"/>
+                                            <constraint firstItem="ZWm-aJ-EKv" firstAttribute="height" secondItem="Yl8-Hn-cvG" secondAttribute="height" id="wg1-hK-u0F"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TY-Wy-trb" customClass="RoundedUIView" customModule="EasyMemorize" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="432" width="381" height="136"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gGi-Ju-Qvh">
+                                                <rect key="frame" x="0.0" y="0.0" width="381" height="136"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HOI-vf-3Qs">
+                                                        <rect key="frame" x="0.0" y="26.5" width="180" height="83"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFw-a5-Oqo">
+                                                                <rect key="frame" x="54" y="0.0" width="72" height="32"/>
+                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="25"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k8h-T9-PKd">
+                                                                <rect key="frame" x="23" y="40" width="134" height="43"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="bnr-Eq-eKd">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="43"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMp-Ld-OQu">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="42" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anv-u0-YrU">
+                                                                                <rect key="frame" x="0.0" y="25" width="103.5" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="eL7-Zh-YQ3">
+                                                                        <rect key="frame" x="111.5" y="0.0" width="22.5" height="43"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qR3-ES-VC0">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="22.5" height="19.5"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="13"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6z-gR-XMV">
+                                                                                <rect key="frame" x="0.0" y="26.5" width="22.5" height="16.5"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="13"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box2-flower" translatesAutoresizingMaskIntoConstraints="NO" id="f7O-w7-MEF">
+                                                        <rect key="frame" x="180" y="0.0" width="74" height="136"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards make available to review after 2 days in this box." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HY1-ed-2nc">
+                                                        <rect key="frame" x="254" y="27.5" width="127" height="81"/>
+                                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="gGi-Ju-Qvh" firstAttribute="width" secondItem="9TY-Wy-trb" secondAttribute="width" id="3PA-3i-bJn"/>
+                                            <constraint firstItem="gGi-Ju-Qvh" firstAttribute="centerX" secondItem="9TY-Wy-trb" secondAttribute="centerX" id="RSH-7U-WmY"/>
+                                            <constraint firstItem="gGi-Ju-Qvh" firstAttribute="centerY" secondItem="9TY-Wy-trb" secondAttribute="centerY" id="bSG-3J-0wW"/>
+                                            <constraint firstItem="gGi-Ju-Qvh" firstAttribute="height" secondItem="9TY-Wy-trb" secondAttribute="height" id="qZZ-mT-yN9"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iea-iM-tF3" customClass="RoundedUIView" customModule="EasyMemorize" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="576" width="381" height="136"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GaO-e0-Hui">
+                                                <rect key="frame" x="0.0" y="0.0" width="381" height="136"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="p3a-zr-KtA">
+                                                        <rect key="frame" x="0.0" y="26.5" width="180" height="83"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Box 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nb7-Yg-Ozv">
+                                                                <rect key="frame" x="55.5" y="0.0" width="69" height="32"/>
+                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="25"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dIY-KP-gtF">
+                                                                <rect key="frame" x="23" y="40" width="134" height="43"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="HmM-Sz-kci">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="43"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaW-RO-oef">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="42" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available cards:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAk-9g-BMi">
+                                                                                <rect key="frame" x="0.0" y="25" width="103.5" height="18"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="14"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="L7I-gz-jLT">
+                                                                        <rect key="frame" x="111.5" y="0.0" width="22.5" height="43"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdQ-Ev-LIL">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="22.5" height="19.5"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="13"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="870" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8O-F8-EbC">
+                                                                                <rect key="frame" x="0.0" y="26.5" width="22.5" height="16.5"/>
+                                                                                <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="13"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box1-flower" translatesAutoresizingMaskIntoConstraints="NO" id="Rlp-ue-7CT">
+                                                        <rect key="frame" x="180" y="0.0" width="74" height="136"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards make available to review after one day in this box." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uI1-WM-NDX">
+                                                        <rect key="frame" x="254" y="27.5" width="127" height="81"/>
+                                                        <fontDescription key="fontDescription" name="SnellRoundhand-Black" family="Snell Roundhand" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="GaO-e0-Hui" firstAttribute="height" secondItem="iea-iM-tF3" secondAttribute="height" id="6f9-Xh-6rB"/>
+                                            <constraint firstItem="GaO-e0-Hui" firstAttribute="width" secondItem="iea-iM-tF3" secondAttribute="width" id="9th-Uf-lbF"/>
+                                            <constraint firstItem="GaO-e0-Hui" firstAttribute="centerY" secondItem="iea-iM-tF3" secondAttribute="centerY" id="viB-Qe-Cit"/>
+                                            <constraint firstItem="GaO-e0-Hui" firstAttribute="centerX" secondItem="iea-iM-tF3" secondAttribute="centerX" id="ylK-4E-vEW"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="lDF-tZ-R08" firstAttribute="height" secondItem="bjs-we-qqG" secondAttribute="height" multiplier="3" id="kmZ-qW-Zr1"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="doI-0p-Tqq" firstAttribute="centerY" secondItem="ffd-gM-H9F" secondAttribute="centerY" id="9Jv-QL-uKz"/>
-                            <constraint firstItem="doI-0p-Tqq" firstAttribute="width" secondItem="ffd-gM-H9F" secondAttribute="width" id="Mvk-Dw-DRk"/>
-                            <constraint firstItem="doI-0p-Tqq" firstAttribute="height" secondItem="ffd-gM-H9F" secondAttribute="height" id="ceK-4D-vaz"/>
-                            <constraint firstItem="doI-0p-Tqq" firstAttribute="centerX" secondItem="ffd-gM-H9F" secondAttribute="centerX" id="wQU-h0-20h"/>
+                            <constraint firstItem="xMh-0s-MEM" firstAttribute="height" secondItem="ffd-gM-H9F" secondAttribute="height" multiplier="0.92" id="Fnx-Ak-Sdh"/>
+                            <constraint firstItem="evT-S0-U6o" firstAttribute="leading" secondItem="ffd-gM-H9F" secondAttribute="leading" id="HYg-dI-w9p"/>
+                            <constraint firstItem="evT-S0-U6o" firstAttribute="top" secondItem="ffd-gM-H9F" secondAttribute="top" id="Iv9-JR-1eq"/>
+                            <constraint firstItem="xMh-0s-MEM" firstAttribute="centerY" secondItem="ffd-gM-H9F" secondAttribute="centerY" id="VGo-By-aIX"/>
+                            <constraint firstAttribute="bottom" secondItem="evT-S0-U6o" secondAttribute="bottom" constant="34" id="XQY-ue-Ms8"/>
+                            <constraint firstItem="xMh-0s-MEM" firstAttribute="width" secondItem="ffd-gM-H9F" secondAttribute="width" multiplier="0.92" id="Yi7-iQ-qAs"/>
+                            <constraint firstItem="xMh-0s-MEM" firstAttribute="centerX" secondItem="ffd-gM-H9F" secondAttribute="centerX" id="h1b-wY-DiG"/>
+                            <constraint firstAttribute="trailing" secondItem="evT-S0-U6o" secondAttribute="trailing" id="hth-M6-xdk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ffd-gM-H9F"/>
                     </view>
@@ -253,11 +553,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsr-CQ-e0L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4836" y="78"/>
+            <point key="canvasLocation" x="-4836.231884057971" y="77.678571428571431"/>
         </scene>
     </scenes>
     <resources>
-        <image name="dashboard-report4" width="551" height="398"/>
+        <image name="Box.background" width="564" height="846"/>
+        <image name="Box1-flower" width="74" height="195"/>
+        <image name="Box2-flower" width="74" height="195"/>
+        <image name="Box3-flower" width="74" height="195"/>
+        <image name="Box4-flower" width="74" height="195"/>
+        <image name="Box5-flower" width="74" height="195"/>
+        <image name="ShowBox-background" width="564" height="846"/>
         <image name="dontKnow" width="31" height="49"/>
         <image name="know" width="44" height="47"/>
     </resources>

@@ -19,6 +19,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card-background" translatesAutoresizingMaskIntoConstraints="NO" id="5KK-Xi-rL4">
+                                <rect key="frame" x="20" y="52" width="374" height="810"/>
+                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ujj-34-VrS">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
@@ -53,10 +56,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="5KK-Xi-rL4" firstAttribute="leading" secondItem="GCk-Qi-U2K" secondAttribute="leadingMargin" id="2b4-p3-Dmd"/>
                             <constraint firstAttribute="trailing" secondItem="Ujj-34-VrS" secondAttribute="trailing" id="31C-DA-mFy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5KK-Xi-rL4" secondAttribute="trailing" id="6sS-zU-tCn"/>
                             <constraint firstItem="Ujj-34-VrS" firstAttribute="leading" secondItem="GCk-Qi-U2K" secondAttribute="leading" id="BCg-7c-GkG"/>
                             <constraint firstItem="cBn-nY-8aI" firstAttribute="top" secondItem="Ujj-34-VrS" secondAttribute="bottom" id="EdY-xY-cwO"/>
                             <constraint firstItem="Ujj-34-VrS" firstAttribute="top" secondItem="URP-S5-wNj" secondAttribute="bottom" id="Ekl-zs-vGA"/>
+                            <constraint firstItem="5KK-Xi-rL4" firstAttribute="top" secondItem="URP-S5-wNj" secondAttribute="bottom" constant="8" symbolic="YES" id="GnB-Zu-fAl"/>
+                            <constraint firstItem="cBn-nY-8aI" firstAttribute="top" secondItem="5KK-Xi-rL4" secondAttribute="bottom" id="jFg-Ef-euw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -220,6 +227,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Card-background" width="500" height="689"/>
         <image name="icons8-3d-rotate-50" width="50" height="50"/>
         <image name="icons8-audio-wave-30" width="30" height="30"/>
         <image name="sendMail" width="45" height="47"/>

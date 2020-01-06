@@ -60,6 +60,7 @@
 		F296AC83238BB55700E8E5ED /* EasyMemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F296AC82238BB55700E8E5ED /* EasyMemorizeUITests.swift */; };
 		F29B8B4C23AE0E09009C1BD0 /* CardServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B8B4B23AE0E09009C1BD0 /* CardServiceTest.swift */; };
 		F2A53AF2239B954F00F6E039 /* Card.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A53AF1239B954F00F6E039 /* Card.storyboard */; };
+		F2AB582D23C2038C00424B7E /* RoundedUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AB582C23C2038C00424B7E /* RoundedUIView.swift */; };
 		F2ACB9D723AF65E300E1D2A7 /* BoxServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ACB9D623AF65E300E1D2A7 /* BoxServiceTest.swift */; };
 		F2D0BD6A239E2763002B9DC3 /* LessonServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0BD69239E2763002B9DC3 /* LessonServiceType.swift */; };
 		F2D0BD6C239E389E002B9DC3 /* LessonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0BD6B239E389E002B9DC3 /* LessonService.swift */; };
@@ -155,6 +156,7 @@
 		F296AC84238BB55700E8E5ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F29B8B4B23AE0E09009C1BD0 /* CardServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardServiceTest.swift; sourceTree = "<group>"; };
 		F2A53AF1239B954F00F6E039 /* Card.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Card.storyboard; sourceTree = "<group>"; };
+		F2AB582C23C2038C00424B7E /* RoundedUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedUIView.swift; sourceTree = "<group>"; };
 		F2ACB9D623AF65E300E1D2A7 /* BoxServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxServiceTest.swift; sourceTree = "<group>"; };
 		F2D0BD69239E2763002B9DC3 /* LessonServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonServiceType.swift; sourceTree = "<group>"; };
 		F2D0BD6B239E389E002B9DC3 /* LessonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonService.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 		F21F248D238BCF7600CFCFBF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F2AB582C23C2038C00424B7E /* RoundedUIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -664,6 +667,7 @@
 				F2964B8B239D2B6900F4D223 /* LessonItem.swift in Sources */,
 				F27F74B923B1F6CE00789AF4 /* ShowBoxCardsViewController.swift in Sources */,
 				F27F74B123B1F44F00789AF4 /* CreateCardViewController.swift in Sources */,
+				F2AB582D23C2038C00424B7E /* RoundedUIView.swift in Sources */,
 				F24C2F9923B9D4CC00C35FCE /* EditLessonViewModel.swift in Sources */,
 				F27F74C723B20B3600789AF4 /* TabBarViewController.swift in Sources */,
 				F2D0BD70239E8475002B9DC3 /* CardService.swift in Sources */,

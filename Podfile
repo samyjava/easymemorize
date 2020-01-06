@@ -7,6 +7,7 @@ target 'EasyMemorize' do
     pod 'RxGesture'
     pod 'Charts'
     pod 'RxRealm'
+    pod 'RealmSwift'
     pod 'Action'
 end
 
