@@ -155,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Register-Pass" translatesAutoresizingMaskIntoConstraints="NO" id="sPf-JR-IY1">
-                                <rect key="frame" x="0.0" y="-1504" width="500" height="2004"/>
+                                <rect key="frame" x="0.0" y="-502" width="500" height="1002.0000000000002"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoL-6G-TKt">
                                 <rect key="frame" x="0.0" y="0.0" width="500" height="44"/>
@@ -233,7 +233,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="vdO-1O-Qt0">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="vdO-1O-Qt0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQq-2I-s5i">
@@ -241,7 +241,7 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome" translatesAutoresizingMaskIntoConstraints="NO" id="41Z-LJ-Sab">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginWelcome" translatesAutoresizingMaskIntoConstraints="NO" id="41Z-LJ-Sab">
                                 <rect key="frame" x="20" y="52" width="374" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="8Fp-KA-ci5"/>
@@ -270,11 +270,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LoginBackground" width="500" height="689"/>
+        <image name="LoginWelcome" width="564" height="564"/>
         <image name="Register-Pass" width="564" height="1002"/>
         <image name="RegisterBottom" width="1100" height="544"/>
         <image name="RegisterTop" width="1100" height="528"/>
-        <image name="Welcome" width="564" height="564"/>
+        <image name="background" width="500" height="689"/>
         <image name="faceid" catalog="system" width="64" height="56"/>
         <image name="nosign" catalog="system" width="64" height="60"/>
         <image name="number.circle" catalog="system" width="64" height="60"/>
