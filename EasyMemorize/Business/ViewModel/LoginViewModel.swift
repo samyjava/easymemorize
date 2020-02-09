@@ -40,19 +40,33 @@ struct LoginViewModel {
     func detectBiometric() -> CocoaAction {
         return CocoaAction {
             let context = LAContext()
-            var loginSuccess = false
-            var loginError: Error?
+            let subject = PublishSubject<Void>()
             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "We are about to login") { success, error in
-                loginSuccess = success
-                loginError = error
+                if success {
+                    DispatchQueue.main.async {
+                        let tabBarViewModel = TabBarViewModel(sceneCoordinator: self.sceneCoordinator)
+                        self.sceneCoordinator.sceneTransition(to: .tabBar(viewModel: tabBarViewModel), type: .root).do(onError: { error in
+                            throw error
+                        })}
+                    subject.onCompleted()
+                } else {
+                    subject.onError(LoginViewModelError.biometricAuthenticationFailed)
+                }
             }
-            guard loginSuccess, loginError == nil else {
-                return Observable<Void>.error(LoginViewModelError.biometricAuthenticationFailed)
-            }
-            let tabBarViewModel = TabBarViewModel(sceneCoordinator: self.sceneCoordinator)
-            return self.sceneCoordinator.sceneTransition(to: .tabBar(viewModel: tabBarViewModel), type: .root).do(onError: { error in
-                throw error
-            }).asObservable().map{_ in}
+            return subject.asObserver()
         }
+    }
+    
+    func loginWay() -> Single<LoginWayItem> {
+        self.userService.fetchUser().do(onSuccess: { user in
+            if user.loginWay == LoginWayItem.none {
+                let tabBarViewModel = TabBarViewModel(sceneCoordinator: self.sceneCoordinator)
+                let testLesson = LessonService()
+                let testbox = BoxService()
+                let testCard = CardService()
+                self.sceneCoordinator.createTabBar(lessonService: testLesson, boxService: testbox, cardService: testCard)
+                self.sceneCoordinator.sceneTransition(to: .tabBar(viewModel: tabBarViewModel), type: .root)
+            }
+        }).map{$0.loginWay}
     }
 }

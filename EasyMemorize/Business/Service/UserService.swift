@@ -30,9 +30,9 @@ struct UserService: UserServiceType {
             return Completable.error(UserServiceError.creationFailed)
         }
     }
-    
+    // implement this func correctly
     func athenticate(password: String) -> Completable {
-        fatalError()
+        return Completable.error(UserServiceError.creationFailed)
     }
     
     func edit(user: UserItem, userName: String?, prsImage: String?, loginWay: LoginWayItem?) -> Completable {
@@ -43,5 +43,18 @@ struct UserService: UserServiceType {
         fatalError()
     }
     
+    func fetchUser() -> Single<UserItem> {
+        let userTemp = UserItem(userName: "zgjhghzdj", loginWay: .none)
+        return Single.just(userTemp)
+        guard let userData = UserDefaults.standard.data(forKey: "UserDataInfo") else {
+            return Single.error(UserServiceError.fetchFailed)
+        }
+        do {
+         let user = try JSONDecoder().decode(UserItem.self, from: userData)
+            return Single.just(user)
+        } catch {
+            return Single.error(UserServiceError.fetchFailed)
+        }
+    }
     
 }

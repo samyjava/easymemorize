@@ -11,6 +11,7 @@
 		638A14263D9DC7A7EC0FE731 /* Pods_EasyMemorizeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322582C9A64DA12059F28F5C /* Pods_EasyMemorizeTests.framework */; };
 		F21F248F238BD0D300CFCFBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21F248E238BD0D300CFCFBF /* Main.storyboard */; };
 		F22AC5ED238D08CA00DECCB1 /* Lesson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */; };
+		F22B388223C36319000C2A03 /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B388123C36319000C2A03 /* CreatePasswordViewController.swift */; };
 		F2487DEA23BCBEC900130176 /* TextToSpeechServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2487DE923BCBEC900130176 /* TextToSpeechServiceType.swift */; };
 		F2487DEC23BCC0E600130176 /* TextToSpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2487DEB23BCC0E600130176 /* TextToSpeechService.swift */; };
 		F2487DEE23BCDBC100130176 /* TextToSpeechServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2487DED23BCDBC100130176 /* TextToSpeechServiceTest.swift */; };
@@ -101,6 +102,7 @@
 		E5EF1047C4E86A85728823E0 /* Pods-EasyMemorize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyMemorize.debug.xcconfig"; path = "Target Support Files/Pods-EasyMemorize/Pods-EasyMemorize.debug.xcconfig"; sourceTree = "<group>"; };
 		F21F248E238BD0D300CFCFBF /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F22AC5EC238D08CA00DECCB1 /* Lesson.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lesson.storyboard; sourceTree = "<group>"; };
+		F22B388123C36319000C2A03 /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
 		F2487DE923BCBEC900130176 /* TextToSpeechServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechServiceType.swift; sourceTree = "<group>"; };
 		F2487DEB23BCC0E600130176 /* TextToSpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechService.swift; sourceTree = "<group>"; };
 		F2487DED23BCDBC100130176 /* TextToSpeechServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechServiceTest.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				F296AC64238BB55000E8E5ED /* RegisterViewController.swift */,
+				F22B388123C36319000C2A03 /* CreatePasswordViewController.swift */,
 				F27F74A823B1F04D00789AF4 /* LoginViewController.swift */,
 				F27F74AA23B1F2B200789AF4 /* CreateLessonViewController.swift */,
 				F27F74B023B1F44F00789AF4 /* CreateCardViewController.swift */,
@@ -712,6 +715,7 @@
 				F2FC81C2239D69FA0054F7E1 /* LoginWayItem.swift in Sources */,
 				F296AC63238BB55000E8E5ED /* SceneDelegate.swift in Sources */,
 				F27F74AD23B1F30700789AF4 /* CreateLessonViewModel.swift in Sources */,
+				F22B388223C36319000C2A03 /* CreatePasswordViewController.swift in Sources */,
 				F27F74CB23B23D8300789AF4 /* LessonsViewModel.swift in Sources */,
 				F2FD2BAB23B0B4F80004F695 /* Scene+ViewController.swift in Sources */,
 				F2FC81BE239D5C6B0054F7E1 /* BoxCardItem.swift in Sources */,

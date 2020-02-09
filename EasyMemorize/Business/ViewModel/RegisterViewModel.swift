@@ -11,7 +11,6 @@ import RxSwift
 import Action
 import LocalAuthentication
 
-
 struct RegisterViewModel {
     let sceneCoordinator: SceneCoordinatorType
     let userService: UserServiceType

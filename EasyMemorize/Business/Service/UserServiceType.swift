@@ -29,4 +29,7 @@ protocol UserServiceType {
     
     @discardableResult
     func delete(user: UserItem) -> Completable
+    
+    @discardableResult
+    func fetchUser() -> Single<UserItem>
 }

@@ -33,6 +33,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        let sceneCoordinator = SceneCoordinator(window: self.window!)
+        
+        let userService = UserService()
+        let registerViewModel = RegisterViewModel(sceneCoordinator: sceneCoordinator, userService: userService)
+       /* sceneCoordinator.sceneTransition(to: .register(viewModel: registerViewModel), type: .root) */
+        let loginViewModel = LoginViewModel(sceneCoordinator: sceneCoordinator, userService: userService)
+        sceneCoordinator.sceneTransition(to: .login(viewModel: loginViewModel), type: .root)
     }
 
     @available(iOS 13.0, *)

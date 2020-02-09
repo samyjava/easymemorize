@@ -67,10 +67,11 @@ extension Scene {
         case .tabBar(let viewModel):
             let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
             var viewController = storyboard.instantiateViewController(identifier: "TabBar") as TabBarViewController
-            viewController.viewControllers = []
+            var temViewControllers = [UIViewController]()
             Tab.tabs.forEach {
-                viewController.viewControllers!.append($0.viewController())
+                temViewControllers.append($0.viewController())
             }
+            viewController.viewControllers = temViewControllers
             viewController.bindViewModel(to: viewModel)
             return viewController
             
