@@ -1,6 +1,7 @@
 use_frameworks!
 
 target 'EasyMemorize' do
+    
     pod 'RxSwift', '~> 5'
     pod 'RxCocoa', '~> 5'
     pod 'RxDataSources', '~> 4.0'
